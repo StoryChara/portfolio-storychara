@@ -1,5 +1,16 @@
 import React from "react";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+
+// Componentes básicos
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
+import Home from './routes/Home.jsx';
+
 const projects = [
   { name: "Carton Aleatorio", url: "https://github.com/tu-usuario/Carton_Aleatorio" },
   { name: "Punch-Out", url: "https://github.com/tu-usuario/punch-out" },
@@ -8,19 +19,15 @@ const projects = [
 
 function App() {
   return (
-    <div style={{ fontFamily: "Arial", textAlign: "center", padding: "20px" }}>
-      <h1>Mi Portafolio</h1>
-      <p>Bienvenido a mi portafolio. Aquí están mis proyectos en GitHub:</p>
-      <ul style={{ listStyle: "none", padding: 0 }}>
-        {projects.map((project, index) => (
-          <li key={index} style={{ margin: "10px 0" }}>
-            <a href={project.url} target="_blank" rel="noopener noreferrer">
-              {project.name}
-            </a>
-          </li>
-        ))}
-      </ul>
+    <div className="App">
+    <Navbar />
+    <div className="App-container">
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
+    <Footer />
+  </div>
   );
 }
 

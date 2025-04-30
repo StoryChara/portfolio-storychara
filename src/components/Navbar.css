@@ -1,0 +1,108 @@
+/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.custom-navbar {
+    background-color: #000000;
+    border-bottom: 4px solid #ff0000;
+    padding: 1rem 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.brand-section {
+    display: flex;
+    align-items: center;
+}
+
+.brand-text {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.nav-link-custom {
+    color: #ffffff !important;
+    font-size: 0.8rem;
+    margin: 0 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link-custom:hover {
+    color: #ff0000 !important;
+    text-shadow: 0 0 8px #ff0000;
+    transform: scale(1.1);
+}
+
+.nav-link-custom::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff0000;
+    transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover::after {
+    width: 100%;
+}
+
+/* Animación para el ícono */
+.fa-code {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+
+/* Estilos para la sección de redes sociales */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  border-left: 2px solid #333;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff0000;
+  transform: translateY(-3px);
+  text-shadow: 0 0 8px #ff0000;
+}
+
+/* Ajustes responsivos para redes sociales */
+@media (max-width: 991px) {
+  .social-links {
+      margin: 1rem 0;
+      padding: 1rem 0;
+      justify-content: center;
+      border-left: none;
+      border-top: 2px solid #333;
+  }
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 991px) {
+    .nav-link-custom {
+        margin: 1rem 0;
+        text-align: center;
+    }
+    
+    .navbar-collapse {
+        background-color: #000000;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
+}
