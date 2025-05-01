@@ -24,6 +24,36 @@ const education = [
           period: "2025"
      },
      {
+          institution: "Skillsoft",
+          title: "Concurrency",
+          period: "2025"
+     },
+     {
+          institution: "goFLUENT",
+          title: "CEFR B2 / goFLUENT B2.2",
+          period: "2025"
+     },
+     {
+          institution: "Udemy",
+          title: "Redacción de Prompts y Usos Prácticos para IA y Chat GPT",
+          period: "2025"
+     },
+     {
+          institution: "Udemy",
+          title: "Agentes de IA - Transformando Negocios y Procesos Complejos",
+          period: "2025"
+     },
+     {
+          institution: "Coursera",
+          title: "AI Now 2.0 - Use GEN AI as your Thought Partner - Module 2",
+          period: "2025"
+     },
+     {
+          institution: "Coursera",
+          title: "AI Now 2.0 - Use GEN AI as your Thought Partner - Module 1",
+          period: "2025"
+     },
+     {
           institution: "Universidad del Rosario",
           title: "Codificación y Programación en Python",
           period: "2023"
@@ -49,7 +79,7 @@ const education = [
           period: "2021"
      },
      {
-          institution: "Universidad Nacional de Colombia - Bogotá",
+          institution: "Universidad Nacional de Colombia",
           title: "Laboratorio Innovación - Taller Práctico de Programación Para Todos",
           period: "2021"
      },
@@ -151,14 +181,20 @@ const education = [
 ];
 
 const skills = [
-     { name: "Python", certified: true, porcentage: "80%" },
-     { name: "C++", certified: true, porcentage: "40%" },
-     { name: "Java", certified: false, porcentage: "40%" },
-     { name: "MySQL", certified: false, porcentage: "60%" },
-     { name: "HTML", certified: false, porcentage: "50%" },
-     { name: "JavaScript", certified: false, porcentage: "70%" },
-     { name: "CSS", certified: false, porcentage: "30%" },
-     { name: "ReactJS", certified: false, porcentage: "25%" }
+     { name: "Python", certified: true, porcentage: "85%", icon:"fa-brands fa-python" },
+     { name: "C++", certified: true, porcentage: "40%", icon:"fa-solid fa-terminal" },
+     { name: "Java", certified: false, porcentage: "40%", icon:"fa-brands fa-java" },
+     { name: "MySQL", certified: false, porcentage: "60%", icon:"fa-solid fa-database" },
+     { name: "HTML", certified: false, porcentage: "50%", icon:"fa-brands fa-html5" },
+     { name: "JavaScript", certified: false, porcentage: "70%", icon:"fa-brands fa-js" },
+     { name: "CSS", certified: false, porcentage: "30%", icon:"fa-brands fa-css" },
+     { name: "ReactJS", certified: false, porcentage: "25%", icon:"fa-brands fa-react" }
+];
+
+const languages = [
+     { name: "Spanish", porcentage: "100%" },
+     { name: "English", porcentage: "60%" },
+     { name: "Japanese", porcentage: "20%" }
 ];
 
 // Función para convertir el porcentaje de string a número
@@ -168,10 +204,11 @@ const getPercentageNumber = (percentageStr) => {
 
 const getSkillLevel = (percentageStr) => {
      const percentage = getPercentageNumber(percentageStr);
-     if (percentage <= 35) return "Básico";
-     if (percentage <= 75) return "Intermedio";
-     if (percentage <= 80) return "Avanzado";
-     return "Profesional";
+     if (percentage <= 35) return "Basic";
+     if (percentage <= 75) return "Intermediate";
+     if (percentage <= 85) return "Advanced";
+     if (percentage <= 99) return "Professional";
+     return "Native";
 };
      
 
@@ -181,7 +218,7 @@ const Skills = () => {
           {/* Sección de Educación */}
                <Row className="justify-content-center">
                     <Col xs={12}>
-                         <h2 className="retro-title text-center mb-5">Educación</h2>
+                         <h2 className="retro-title text-center mb-5">Academic Information</h2>
                     </Col>
                     {education.map((item, idx) => (
                          <Col key={idx} xs={12} md={6} lg={4} className="mb-4">
@@ -196,15 +233,33 @@ const Skills = () => {
                {/* Sección de Habilidades */}
                <Row className="justify-content-center mt-5">
                     <Col xs={12}>
-                         <h2 className="retro-title text-center mb-5">Conocimientos Informáticos</h2>
+                         <h2 className="retro-title text-center mb-5">Programming Languages</h2>
                     </Col>
                     {skills.map((skill, idx) => (
                          <Col key={idx} xs={6} md={4} lg={3} className="mb-4">
                               <div className="skill-card">
-                                   <h3 className="skill-name">{skill.name}</h3>
+                                   <h3 className="skill-name">
+                                        <i className={skill.icon} style={{ marginRight: "8px", fontSize: "1.5rem" }}></i>
+                                        {skill.name}
+                                   </h3>
                                    <div className='skill-level'> <div className="level-bar" style={{ width: skill.porcentage}}></div> </div>
-                                   <p className="skill-info"> Nivel {getSkillLevel(skill.porcentage)} </p>
-                                   <p className='skill-info'> {skill.certified && <span className="certified-badge">Certificado</span>} </p>
+                                   <p className="skill-info"> {getSkillLevel(skill.porcentage)} Level </p>
+                                   <p className='skill-info'> {skill.certified && <span className="certified-badge">Certificate</span>} </p>
+                              </div>
+                         </Col>
+                    ))}
+               </Row>
+               {/* Sección de Idiomas */}
+               <Row className="justify-content-center mt-5">
+                    <Col xs={12}>
+                         <h2 className="retro-title text-center mb-5">Languages</h2>
+                    </Col>
+                    {languages.map((language, idx) => (
+                         <Col key={idx} xs={6} md={4} lg={3} className="mb-4">
+                              <div className="skill-card">
+                                   <h3 className="skill-name">{language.name}</h3>
+                                   <div className='skill-level'> <div className="level-bar" style={{ width: language.porcentage}}></div> </div>
+                                   <p className="skill-info"> {getSkillLevel(language.porcentage)} Level </p>
                               </div>
                          </Col>
                     ))}

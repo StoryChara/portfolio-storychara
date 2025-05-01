@@ -17,6 +17,7 @@ const NavigationBar = () => {
           <Nav.Link as={NavLink} to="/" className="nav-link-custom">HOME</Nav.Link>
             <Nav.Link as={NavLink} to="/projects" className="nav-link-custom">PROJECTS</Nav.Link>
             <Nav.Link as={NavLink} to="/skills" className="nav-link-custom">SKILLS</Nav.Link>
+            <Nav.Link as={NavLink} to="/contact" className="nav-link-custom">CONTACT</Nav.Link>
           </Nav>
           
           {/* Sección de redes sociales */}
@@ -26,6 +27,9 @@ const NavigationBar = () => {
             </a>
             <a href="mailto:mjarah@unal.edu.co" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-envelope me-2"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mjarah/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
         </Navbar.Collapse>

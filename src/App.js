@@ -13,6 +13,7 @@ import Footer from './components/Footer.jsx';
 import Home from './routes/Home.jsx';
 import Projects from './routes/Projects.jsx';
 import Skills from './routes/Skills.jsx';
+import Contact from './routes/Contact.jsx'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
       <Footer />
