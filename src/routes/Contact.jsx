@@ -71,18 +71,24 @@ const Contact = () => {
         <Col xs={12} className="section-container">
           <h2 className="retro-title text-center">Social Network</h2>
           <div className="social-links">
-            <a href="https://github.com/StoryChara" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://discord.com/users/349912950649126913" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-discord fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mjarah/" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://wa.me/573157978099" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-whatsapp fa-2x"></i>
-            </a>
+               <a href="https://github.com/StoryChara" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-github" style={{fontSize: "2.5rem"}}></i>
+               </a>
+               <a href="https://discord.com/users/349912950649126913" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-discord" style={{fontSize: "2.5rem"}}></i>
+               </a>
+               <a href="https://www.linkedin.com/in/mjarah/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin" style={{fontSize: "2.5rem"}}></i>
+               </a>
+               <a href="mailto:mjarah@unal.edu.co" target="_blank" rel="noopener noreferrer">
+                    <i className="fas fa-envelope me-2" style={{fontSize: "2.5rem"}}></i>
+               </a>
+               <a href="https://wa.me/573157978099" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-whatsapp" style={{fontSize: "2.5rem"}}></i>
+               </a>
+               <a href="tel:+573157978099">
+                    <i className="fas fa-phone" style={{fontSize: "2.5rem"}}></i>
+               </a>
           </div>
         </Col>
 

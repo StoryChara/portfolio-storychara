@@ -20,11 +20,6 @@
     max-width: 75%;
 }
 
-.section-container:hover {
-    transform: translateY(-7px) scale(1.025);
-    box-shadow: 0 0 30px 8px #ff000055;
-    border-color: #ff0000;
-}
 
 /* Títulos */
 .retro-title {
@@ -66,7 +61,6 @@
     transform: translateY(-3px);
     box-shadow: 0 0 20px 7px #ff000055;
 }
-
 
 /* Tarjetas de trabajo */
 .work-card {
