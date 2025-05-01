@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.project-container {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 6rem 0;
+}
+
+.project-container h2 {
+    padding: 0rem 0rem 4rem 0rem;
+}
+
+.project-title-main {
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.1em;
+}
+
+.projects-row {
+    gap: 2rem 1rem;
+}
+
+.project-card {
+    background-color: #1b1c24;
+    border-radius: 15px;
+    padding: 1rem 1rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.52);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 260px;
+    max-width: 330px;
+    width: 100%;
+    transition: transform 0.18s, box-shadow 0.18s;
+    border: 2px solid #18191f;
+    position: relative;
+    letter-spacing: 0.1em;
+    line-height: 1;
+}
+.project-card:hover {
+    transform: translateY(-7px) scale(1.025);
+    box-shadow: 0 0 30px 8px #ff000055;
+    border-color: #ff0000;
+}
+.project-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1.3rem;
+    border: 2.5px solid #fff;
+    box-shadow: 0 0 18px 3px #000a;
+    background: #292929;
+}
+.project-card .retro-title {
+    margin-bottom: 0.5em;
+    color: #ff0000;
+    text-shadow: 2px 2px 0 #000;
+    text-align: center;
+}
+.project-desc {
+    font-size: 1.15rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+    min-height: 50px;
+}
+
+.project-techs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin: 0.5em 0 1.1em 0;
+}
+
+.project-tech {
+    background: #18191f;
+    color: #fffbe8;
+    border-radius: 8px;
+    font-family: 'Jersey 10', cursive;
+    font-size: 1.25em;
+    letter-spacing: 0.04em;
+    padding: 0.25em 0.5em;
+    border: 1.4px solid #ff0000;
+    margin-bottom: -0.5em;
+    box-shadow: 1px 1px 5px #0007;
+    transition: background 0.21s, color 0.18s;
+}
+
+.project-tech:hover {
+    background: #ff0000;
+    color: #0f0f0f;
+}
+
+.project-github {
+    margin-top: 1.4em;
+    width: 100%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9em;
+    color: #ff0000 !important;
+    border-color: #ff0000;
+    text-align: center;
+    letter-spacing: .07em;
+    box-shadow: 0 0 10px 3px #0009;
+    transition: all 0.2s;
+}
+
+.project-github:hover, .project-github:focus {
+    background: #ff0000;
+    color: #1e1e2f !important;
+    border-color: #ff0000;
+    box-shadow: 0 0 20px 7px #ff000055;
+    outline: none;
+}
+
+@media (max-width: 991px) {
+    .projects-row {
+        gap: 2.3rem 0.2rem;
+    }
+    .project-card {
+        max-width: 95vw;
+        padding: 1.2rem 0.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-card {
+        min-width: 95vw;
+        border-radius: 12px;
+    }
+}
+
+/* accesibilidad */
+a:focus, button:focus {
+    outline: 2px dashed #ff0000;
+    outline-offset: 2px;
+}

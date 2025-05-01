@@ -10,7 +10,7 @@ const Footer = () => {
                <Container>
                     <Row className="footer-content">
                          <Col md={4} className="footer-section">
-                         <h3 className="footer-title">CONTACTO</h3>
+                         <h3 className="footer-title">CONTACT</h3>
                               <div className="contact-info">
                                    <a href="mailto:mjarah@unal.edu.co" target="_blank" rel="noopener noreferrer">
                                         <i className="fas fa-envelope"></i>
@@ -42,19 +42,18 @@ const Footer = () => {
                          </Col>
 
                          <Col md={4} className="footer-section">
-                              <h3 className="footer-title">NAVEGACIÓN</h3>
+                              <h3 className="footer-title">NAVIGATION</h3>
                               <ul className="footer-links">
-                                   <li><Link to="/">Inicio</Link></li>
-                                   <li><Link to="/projects">Proyectos</Link></li>
-                                   <li><Link to="/skills">Habilidades</Link></li>
-                                   <li><Link to="/contact">Contacto</Link></li>
+                                   <li><Link to="/">Home</Link></li>
+                                   <li><Link to="/projects">Projects</Link></li>
+                                   <li><Link to="/skills">Skills</Link></li>
                               </ul>
                          </Col>
                     </Row>
 
                     <Row>
                          <Col className="text-center copyright">
-                         <p>© {new Date().getFullYear()} Story_Chara | Desarrollado con <i className="fas fa-heart"></i></p>
+                         <p>© {new Date().getFullYear()} Story_Chara | <i className="fas fa-heart"></i></p>
                          </Col>
                     </Row>
                </Container>

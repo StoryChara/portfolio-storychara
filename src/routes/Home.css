@@ -134,7 +134,7 @@
 }
 
 .about-section .retro-text {
-     margin: 1.5rem 0;
+     margin: 1.5rem 2.5rem;
 }
 
 .btn-info {
@@ -142,6 +142,10 @@
      font-family: 'Press Start 2P', cursive;
      border-color: #ff0000;
      color: #1e1e2f;
+}
+
+.btn i {
+     margin-right: 2rem;
 }
 
 .btn-info:hover {

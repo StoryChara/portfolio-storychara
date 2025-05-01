@@ -27,7 +27,7 @@ const Home = () => {
             </div>
             <a className="btn btn-outline-info mt-4" href="/HV.pdf" download role="button">
               <i className="fas fa-download me-2"></i>
-              Descargar CV
+              Download CV
             </a>
           </div>
         </Col>
@@ -37,22 +37,20 @@ const Home = () => {
             <p className='retro-text'>Hey, I'm <span className="highlight">María José Jara Herrera</span></p>
             <p className='retro-title'>Developer</p>
             <p className="retro-text">
-              text
+                A passionate Systems and Computing Engineering student with a particular interest in data science and 
+                information management. My fascination with data organization and analysis drives me to seek efficient 
+                and structured solutions in every project I undertake.
             </p>
           </div>
 
           <Row className="stats-row">
             <Col xs={12} md={4} className="stat-card">
-              <p className='retro-title'>#</p>
-              <p className='retro-text'>text</p>
+              <p className='retro-title'>5+</p>
+              <p className='retro-text'>Programming Languages</p>
             </Col>
             <Col xs={12} md={4} className="stat-card">
-              <p className='retro-title'>#</p>
-              <p className='retro-text'>text</p>
-            </Col>
-            <Col xs={12} md={4} className="stat-card">
-              <p className='retro-title'>#</p>
-              <p className='retro-text'>text</p>
+              <p className='retro-title'>4+</p>
+              <p className='retro-text'>Years Study</p>
             </Col>
           </Row>
         </Col>
@@ -63,7 +61,13 @@ const Home = () => {
         <Col lg={12} className="text-center mb-5">
           <p className='retro-title'>About Me</p>
           <p className='retro-text'>
-            text
+                Beyond code, I'm a gaming enthusiast, especially of Nintendo's innovative franchises, which has helped me 
+                develop creative and problem-solving thinking. This passion for video games complements my perspective on 
+                software development, allowing me to bring a unique approach to my projects.
+                <br></br><br></br>
+                My creative process is enhanced while listening to music, creating an ideal environment for programming and 
+                developing technological solutions. This combination of technology, creativity, and methodology defines my 
+                profile as a developer.
           </p>
           <a className="btn btn-outline-info mt-4" href="/projects" role="button">
             View Projects

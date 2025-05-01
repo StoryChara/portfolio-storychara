@@ -14,10 +14,9 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-          <Nav.Link as={NavLink} to="/" className="nav-link-custom">INICIO</Nav.Link>
-            <Nav.Link as={NavLink} to="/projects" className="nav-link-custom">PROYECTOS</Nav.Link>
-            <Nav.Link as={NavLink} to="/skills" className="nav-link-custom">HABILIDADES</Nav.Link>
-            <Nav.Link as={NavLink} to="/contact" className="nav-link-custom">CONTACTO</Nav.Link>
+          <Nav.Link as={NavLink} to="/" className="nav-link-custom">HOME</Nav.Link>
+            <Nav.Link as={NavLink} to="/projects" className="nav-link-custom">PROJECTS</Nav.Link>
+            <Nav.Link as={NavLink} to="/skills" className="nav-link-custom">SKILLS</Nav.Link>
           </Nav>
           
           {/* Sección de redes sociales */}
