@@ -19,6 +19,11 @@ const education = [
           period: "2025"
      },
      {
+          institution: "Udemy",
+          title: "Wordpress for Beginners - Master Wordpress Quickly",
+          period: "2025"
+     },
+     {
           institution: "Universidad del Rosario",
           title: "Codificación y Programación en Python",
           period: "2023"
