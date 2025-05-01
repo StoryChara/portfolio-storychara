@@ -29,16 +29,25 @@ const Footer = () => {
                               <h3 className="mt-2">Story_Chara</h3>
                               </div>
                               <div className="social-links">
-                              <a href="https://github.com/StoryChara" target="_blank" rel="noopener noreferrer">
-                                   <i className="fab fa-github"></i>
-                              </a>
-                              <a href="mailto:mjarah@unal.edu.co" target="_blank" rel="noopener noreferrer">
-                                   <i className="fas fa-envelope me-2"></i>
-                              </a>
-                              <a href="https://wa.me/573157978099" target="_blank" rel="noopener noreferrer">
-                                   <i className="fab fa-whatsapp"></i>
-                              </a>
-                         </div>
+                                   <a href="https://github.com/StoryChara" target="_blank" rel="noopener noreferrer">
+                                        <i className="fab fa-github"></i>
+                                   </a>
+                                   <a href="https://discord.com/users/349912950649126913" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-discord"></i>
+                                   </a>
+                                   <a href="https://www.linkedin.com/in/mjarah/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                   </a>
+                                   <a href="mailto:mjarah@unal.edu.co" target="_blank" rel="noopener noreferrer">
+                                        <i className="fas fa-envelope me-2"></i>
+                                   </a>
+                                   <a href="https://wa.me/573157978099" target="_blank" rel="noopener noreferrer">
+                                        <i className="fab fa-whatsapp"></i>
+                                   </a>
+                                   <a href="tel:+573157978099">
+                                        <i className="fas fa-phone"></i>
+                                   </a>
+                              </div>
                          </Col>
 
                          <Col md={4} className="footer-section">
@@ -47,6 +56,7 @@ const Footer = () => {
                                    <li><Link to="/">Home</Link></li>
                                    <li><Link to="/projects">Projects</Link></li>
                                    <li><Link to="/skills">Skills</Link></li>
+                                   <li><Link to="/contact">Contact</Link></li>
                               </ul>
                          </Col>
                     </Row>
