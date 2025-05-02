@@ -57,6 +57,7 @@
 .contact-info a:hover {
     color: #ff0000;
     transform: translateX(5px);
+    text-shadow: 0 0 8px #ff0000;
 }
 
 .social-links {
@@ -97,6 +98,7 @@
 
 .footer-links a:hover {
     color: #ff0000;
+    text-shadow: 0 0 8px #ff0000;
 }
 
 .footer-links a::after {

@@ -45,12 +45,16 @@ const Home = () => {
 
           <Row className="stats-row">
             <Col xs={12} md={4} className="stat-card">
-              <p className='retro-title'>5+</p>
+              <p className='retro-title'>10+</p>
               <p className='retro-text'>Programming Languages</p>
             </Col>
             <Col xs={12} md={4} className="stat-card">
               <p className='retro-title'>4+</p>
               <p className='retro-text'>Years Study</p>
+            </Col>
+            <Col xs={12} md={4} className="stat-card">
+              <p className='retro-title'>30+</p>
+              <p className='retro-text'>Courses</p>
             </Col>
           </Row>
         </Col>

@@ -181,14 +181,18 @@ const education = [
 ];
 
 const skills = [
-     { name: "Python", certified: true, porcentage: "85%", icon:"fa-brands fa-python" },
-     { name: "C++", certified: true, porcentage: "40%", icon:"fa-solid fa-terminal" },
-     { name: "Java", certified: false, porcentage: "40%", icon:"fa-brands fa-java" },
-     { name: "MySQL", certified: false, porcentage: "60%", icon:"fa-solid fa-database" },
-     { name: "HTML", certified: false, porcentage: "50%", icon:"fa-brands fa-html5" },
-     { name: "JavaScript", certified: false, porcentage: "70%", icon:"fa-brands fa-js" },
-     { name: "CSS", certified: false, porcentage: "30%", icon:"fa-brands fa-css" },
-     { name: "ReactJS", certified: false, porcentage: "25%", icon:"fa-brands fa-react" }
+     { name: "Python", certified: true, porcentage: "85%", icon: "fa-brands fa-python" },
+     { name: "C++", certified: true, porcentage: "40%", icon: "fa-solid fa-terminal" },
+     { name: "Java", certified: false, porcentage: "40%", icon: "fa-brands fa-java" },
+     { name: "Matlab", certified: false, porcentage: "40%", icon: "fa-solid fa-arrow-down-1-9" },
+     { name: "MySQL", certified: false, porcentage: "60%", icon: "fa-solid fa-database" },
+     { name: "Postgress", certified: false, porcentage: "30%", icon: "fa-solid fa-database" },
+     { name: "HTML", certified: false, porcentage: "50%", icon: "fa-brands fa-html5" },
+     { name: "JavaScript", certified: false, porcentage: "70%", icon: "fa-brands fa-js" },
+     { name: "CSS", certified: false, porcentage: "30%", icon: "fa-brands fa-css" },
+     { name: "WordPress", certified: false, porcentage: "25%", icon: "fa-brands fa-wordpress" },
+     { name: "React", certified: false, porcentage: "25%", icon: "fa-brands fa-react" },
+     { name: "NodeJS", certified: false, porcentage: "25%", icon: "fa-brands fa-node-js" }
 ];
 
 const languages = [

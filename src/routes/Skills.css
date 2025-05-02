@@ -1,13 +1,13 @@
 .skills-container {
     padding: 4rem 2rem;
-    background-color: #1e1e2f;
+    background-color: #0f0f0f;
     min-height: 100vh;
     color: #ffffff;
 }
 
     /* Tarjetas de Educación */
 .education-card {
-    background-color: #27293d;
+    background-color: #1b1c24;
     border-radius: 10px;
     padding: 1.5rem;
     height: 100%;
@@ -58,7 +58,7 @@
 
     /* Tarjetas de Habilidades */
 .skill-card {
-    background-color: #27293d;
+    background-color: #1b1c24;
     border-radius: 10px;
     padding: 1.5rem;
     text-align: center;
@@ -78,7 +78,7 @@
 
 .skill-level {
     height: 10px;
-    background-color: #1e1e2f;
+    background-color: #29293691;
     border-radius: 5px;
     overflow: hidden;
     margin: 1rem 0;
@@ -86,7 +86,7 @@
 
 .level-bar {
     height: 100%;
-    background: linear-gradient(90deg, #ff0000, #940000);
+    background: linear-gradient(90deg, #ff0000, #830000);
     transition: width 1s ease-in-out;
 }
 

@@ -6,7 +6,7 @@
      background-color: #0f0f0f;
      color: #ffffff;
      min-height: 100vh;
-     padding: 4rem 0;
+     padding: 4rem 2rem;
 }
 
 /* Para títulos destacados */
@@ -177,11 +177,12 @@
 
      .intro-content {
           text-align: center;
+          padding: 1rem 2.5rem;
      }
 
      .about-section {
           margin: 1.5rem;
-          padding: 2rem 0.5rem;
+          padding: 2.5rem 0.5rem;
      }
 
      .about-text {
@@ -189,14 +190,10 @@
           margin-bottom: 2rem;
      }
 
-     .stat-card {
-          margin-bottom: 1.3rem;
+     .stats-row {
+          gap: 0.5rem;
           margin-left: 2.5rem;
           margin-right: 2.5rem;
-     }
-
-     .stats-row {
-          gap: 0.0001rem;
      }
 
      .profile-card {
