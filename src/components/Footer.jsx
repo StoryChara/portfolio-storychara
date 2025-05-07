@@ -11,23 +11,6 @@ const Footer = () => {
                     <Row className="footer-content">
                          <Col md={4} className="footer-section">
                          <h3 className="footer-title">CONTACT</h3>
-                              <div className="contact-info">
-                                   <a href="mailto:mjarah@unal.edu.co" target="_blank" rel="noopener noreferrer">
-                                        <i className="fas fa-envelope"></i>
-                                        <span>mjarah@unal.edu.co</span>
-                                   </a>
-                                   <a href="https://wa.me/573157978099" target="_blank" rel="noopener noreferrer">
-                                        <i className="fab fa-whatsapp"></i>
-                                        <span>+57 315 7978099</span>
-                                   </a>
-                              </div>
-                         </Col>
-
-                         <Col md={4} className="footer-section text-center">
-                         <div className="footer-logo">
-                              <i className="fa-solid fa-code fa-flip-horizontal" style={{color: '#ff0000'}}></i>
-                              <h3 className="mt-2">Story_Chara</h3>
-                              </div>
                               <div className="social-links">
                                    <a href="https://github.com/StoryChara" target="_blank" rel="noopener noreferrer">
                                         <i className="fab fa-github"></i>
@@ -41,12 +24,13 @@ const Footer = () => {
                                    <a href="mailto:mjarah@unal.edu.co" target="_blank" rel="noopener noreferrer">
                                         <i className="fas fa-envelope me-2"></i>
                                    </a>
-                                   <a href="https://wa.me/573157978099" target="_blank" rel="noopener noreferrer">
-                                        <i className="fab fa-whatsapp"></i>
-                                   </a>
-                                   <a href="tel:+573157978099">
-                                        <i className="fas fa-phone"></i>
-                                   </a>
+                              </div>
+                         </Col>
+
+                         <Col md={4} className="footer-section text-center">
+                         <div className="footer-logo">
+                              <i className="fa-solid fa-code fa-flip-horizontal" style={{color: '#ff0000'}}></i>
+                              <h3 className="mt-2">Story_Chara</h3>
                               </div>
                          </Col>
 
