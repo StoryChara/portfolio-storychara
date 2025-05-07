@@ -46,7 +46,7 @@ const Home = () => {
           <Row className="stats-row">
             <Col xs={12} md={4} className="stat-card">
               <p className='retro-title'>10+</p>
-              <p className='retro-text'>Programming Languages</p>
+              <p className='retro-text'>Programming Languages & Technologies</p>
             </Col>
             <Col xs={12} md={4} className="stat-card">
               <p className='retro-title'>4+</p>

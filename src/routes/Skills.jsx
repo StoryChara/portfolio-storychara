@@ -14,6 +14,21 @@ const education = [
           period: "2019"
      },
      {
+          institution: "Udemy",
+          title: "Automation Anywhere 360 A2019 - Complete RPA Training Course",
+          period: "2025"
+     },
+     {
+          institution: "Ernst & Young Global Limited",
+          title: "Power BI - Fundamentals",
+          period: "2025"
+     },
+     {
+          institution: "Ernst & Young Global Limited",
+          title: "Sesgos Inconscientes - Discapacidad",
+          period: "2025"
+     },
+     {
           institution: "Universidad de los Andes",
           title: "Backend con Python",
           period: "2025"
@@ -29,8 +44,23 @@ const education = [
           period: "2025"
      },
      {
+          institution: "Ernst & Young Global Limited",
+          title: "Introduction to Inclusive Leadership for All",
+          period: "2025"
+     },
+     {
           institution: "goFLUENT",
           title: "CEFR B2 / goFLUENT B2.2",
+          period: "2025"
+     },
+     {
+          institution: "Ernst & Young Global Limited",
+          title: "English Develpment Series Exploring Futures Thinking in the age of IA",
+          period: "2025"
+     },
+     {
+          institution: "Microsoft Learn",
+          title: "PL-900T00-A: Microsoft Power Platform Fundamentals",
           period: "2025"
      },
      {
@@ -55,7 +85,12 @@ const education = [
      },
      {
           institution: "Universidad del Rosario",
-          title: "Codificación y Programación en Python",
+          title: "Curso de Inteligencia Artificial - Principios y Fundamentos",
+          period: "2023"
+     },
+     {
+          institution: "Universidad del Rosario",
+          title: "Curso en Codificación y Programación en Python",
           period: "2023"
      },
      {
@@ -192,7 +227,9 @@ const skills = [
      { name: "CSS", certified: false, porcentage: "30%", icon: "fa-brands fa-css" },
      { name: "WordPress", certified: false, porcentage: "25%", icon: "fa-brands fa-wordpress" },
      { name: "React", certified: false, porcentage: "25%", icon: "fa-brands fa-react" },
-     { name: "NodeJS", certified: false, porcentage: "25%", icon: "fa-brands fa-node-js" }
+     { name: "NodeJS", certified: false, porcentage: "25%", icon: "fa-brands fa-node-js" },
+     { name: "PowerApps", certified: false, porcentage: "20%", icon: "fa-brands fa-microsoft" },
+     { name: "Automation Anywhere", certified: false, porcentage: "20%", icon: "fa-solid fa-robot" },
 ];
 
 const languages = [
@@ -237,7 +274,7 @@ const Skills = () => {
                {/* Sección de Habilidades */}
                <Row className="justify-content-center mt-5">
                     <Col xs={12}>
-                         <h2 className="retro-title text-center mb-5">Programming Languages</h2>
+                         <h2 className="retro-title text-center mb-5">Programming & Technologies</h2>
                     </Col>
                     {skills.map((skill, idx) => (
                          <Col key={idx} xs={6} md={4} lg={3} className="mb-4">

@@ -56,14 +56,6 @@ const Contact = () => {
               <i className="fas fa-envelope"></i>
               <span>mjarah@unal.edu.co</span>
             </a>
-            <a href="https://wa.me/573157978099" className="contact-link" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-whatsapp"></i>
-              <span>+57 315 7978099</span>
-            </a>
-            <a href="tel:+573157978099" className="contact-link">
-              <i className="fas fa-phone"></i>
-              <span>+57 315 7978099</span>
-            </a>
           </div>
         </Col>
 
@@ -82,12 +74,6 @@ const Contact = () => {
                </a>
                <a href="mailto:mjarah@unal.edu.co" target="_blank" rel="noopener noreferrer">
                     <i className="fas fa-envelope me-2" style={{fontSize: "2.5rem"}}></i>
-               </a>
-               <a href="https://wa.me/573157978099" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-whatsapp" style={{fontSize: "2.5rem"}}></i>
-               </a>
-               <a href="tel:+573157978099">
-                    <i className="fas fa-phone" style={{fontSize: "2.5rem"}}></i>
                </a>
           </div>
         </Col>
