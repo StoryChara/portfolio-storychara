@@ -29,10 +29,7 @@
      line-height: 1;
 }
 
-/* Sección hero */
-.hero-section {
-     gap: 2rem;
-}
+
 
 /* Tarjeta de perfil */
 .profile-card {
@@ -60,15 +57,18 @@
      gap: 1.5rem;
      margin: 1.5rem 0;
 }
+
 .social-links a {
      color: #ffffff;
      font-size: 1.5rem;
      transition: all 0.3s;
 }
+
 .social-links a:hover {
      color: #ff0000;
      transform: scale(1.08) translateY(-3px);
 }
+
 .social-links a:focus {
      outline: 2px dashed #ff0000;
      outline-offset: 2px;
@@ -94,22 +94,27 @@
 }
 
 .stats-table {
-     margin: 0rem -5rem;
+     margin: 0rem 0rem;
 }
 
 .stat-card {
      background-color: #1b1c24;
      border-radius: 10px;
-     padding: 1rem 1.5rem;
+     padding: 2.5rem 1.5rem 1rem;
      text-align: center;
      transition: box-shadow 0.2s;
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.527);
-     flex: 0 1 1; 
+     flex: 1 1 0; 
      height: 100%;
+     line-height: 0rem;
 }
 
 .stat-card:hover {
      box-shadow: 0 0 22px 3px #ff000055;
+}
+
+.stat-card .retro-title{
+     margin-bottom: 1.5rem;
 }
 
 /* About section */
@@ -118,8 +123,6 @@
      background-color: #1b1c24;
      border-radius: 15px;
      margin: 1rem;
-     margin-left: 5rem;
-     margin-right: 5rem;
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.527);
 }
 

@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <Container fluid className="home-container">
       <Row className="hero-section justify-content-center">
-        <Col md={3} lg={4} className="profile-section">
+        <Col sm={12} md={8} lg={4} className="profile-section">
           <div className="profile-card">
             <div className="profile-header">
               <img src={profileImage} alt="Foto de StoryChara desarrollador full stack" className="profile-image" />
@@ -38,7 +38,7 @@ const Home = () => {
           </div>
         </Col>
 
-        <Col md ={7} lg={6} className="intro-section">
+        <Col md={10} lg={6} className="intro-section">
           <div className="intro-content">
             <p className='retro-text'>Hey, I'm <span className="highlight">María José Jara Herrera</span></p>
             <p className='retro-title'>Developer</p>
@@ -51,7 +51,7 @@ const Home = () => {
 
           <Row className="stats-table justify-content-center">
               {stats.map((item, idx) => (
-                    <Col key={idx} xs={12} md={3} lg={5} xl={4} className="mb-4">
+                    <Col key={idx} xs={12} md={5} lg={5} xl={4} className="mb-4">
                         <div className="stat-card">
                           <p className='retro-title'> {item.number} </p>
                           <p className='retro-text'> {item.text} </p>
@@ -65,7 +65,7 @@ const Home = () => {
 
       {/* About Section */}
       <Row className="about-section">
-        <Col lg={12} className="text-center mb-5">
+        <Col lg={12} className="justify-content-center mb-5">
           <p className='retro-title'>About Me</p>
           <p className='retro-text'>
                 Beyond code, I'm a gaming enthusiast, especially of Nintendo's innovative franchises, which has helped me 
