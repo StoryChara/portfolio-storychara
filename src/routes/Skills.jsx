@@ -243,12 +243,12 @@ const languages = [
 ];
 
 const others = [
-     {name: "Photoshop", porcentage: "65%"},
-     {name: "Design and Prototyping", porcentage: "30%"},
-     {name: "Inclusivity", porcentage: "35%"},
-     {name: "Social Media Management", porcentage: "35%"},
-     {name: "Creating Content for Social Media", porcentage: "50%"},
-     {name: "Gender Equality", porcentage: "40%"}
+     {name: "Inclusivity"},
+     {name: "Gender Equality"},
+     {name: "Design and Prototyping"},
+     {name: "Photoshop and Canva"},
+     {name: "Social Media Management"},
+     {name: "Creating Content for Social Media"},
 ]
 
 // Función para convertir el porcentaje de string a número
@@ -311,7 +311,7 @@ const Skills = () => {
                          <Col key={idx} xs={12} md={6} lg={3} className="mb-4">
                               <div className="skill-card">
                                    <h3 className="skill-name">
-                                        <i className={skill.icon} style={{ marginRight: "8px", fontSize: "1.5rem" }}></i><br></br>
+                                        <i className={skill.icon}></i><br></br>
                                         {skill.name}
                                    </h3>
                                    <div className='skill-level'> <div className="level-bar" style={{ width: skill.porcentage}}></div> </div>
@@ -338,20 +338,21 @@ const Skills = () => {
                     ))}
                </Row>
 
-               {/* Sección de Idiomas */}
+               {/* Sección de Otras Habilidades */}
                <Row className="justify-content-center mt-5">
                     <Col xs={12}>
                          <h2 className="retro-title text-center mb-5">Others Knowledge and Skills</h2>
                     </Col>
-                    {others.map((language, idx) => (
-                         <Col key={idx} xs={12} md={6} lg={3} className="mb-4">
-                              <div className="skill-card">
-                                   <h3 className="skill-name">{language.name}</h3>
-                                   <div className='skill-level'> <div className="level-bar" style={{ width: language.porcentage}}></div> </div>
-                                   <p className="skill-info"> {getSkillLevel(language.porcentage)} Level </p>
-                              </div>
-                         </Col>
-                    ))}
+                    <div className="other-section">
+                         <ul>
+                              {others.map((other, idx) => (
+                                   <li key={idx}> 
+                                        <i class="fa-solid fa-check-to-slot"></i> 
+                                        {other.name}.
+                                   </li>
+                              ))}
+                         </ul>
+                    </div>
                </Row>
 
           </Container>
