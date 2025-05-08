@@ -118,7 +118,8 @@
 /* Tarjetas de referencias */
 .references-container {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
+    height: 100%;
 }
 
 .ref-card {
@@ -139,7 +140,7 @@
     color: #ff0000;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.9em;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     text-shadow: 2px 2px 0 #000;
 }
 
@@ -147,6 +148,7 @@
     color: #fffbe8;
     font-family: 'Jersey 10', cursive;
     font-size: 1.15em;
+    margin-bottom: 0.1rem;
 }
 
 /* Accesibilidad */

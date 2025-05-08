@@ -57,7 +57,6 @@
 .education-description {
     font-size: 0.9rem;
     color: #cccccc;
-    font-style: italic;
 }
 
     /* Tarjetas de Habilidades */
@@ -66,7 +65,10 @@
     border-radius: 10px;
     padding: 1.5rem;
     text-align: center;
-    transition: transform 0.3s;
+    height: 100%;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
 }
 
 .skill-card:hover {

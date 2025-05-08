@@ -14,8 +14,16 @@ const work = [
   {
     institution: "Universidad Nacional de Colombia",
     position: "Monitor",
-    function: "I was responsible for resolving student inquiries and grading assignments in the course.",
+    function: "I was responsible for resolving student inquiries and grading assignments in the intersemester computer programming course.",
     supervisor: "Jhonatan Rico",
+    city: "Bogotá D.C",
+    period: '2025'
+  },
+  {
+    institution: "Universidad Nacional de Colombia",
+    position: "Monitor",
+    function: "I was responsible for resolving student inquiries and grading assignments in the OOP course.",
+    supervisor: "Edgar Vargas",
     city: "Bogotá D.C",
     period: '2025'
   },
@@ -113,30 +121,23 @@ const Contact = () => {
 
         {/* Referencias Personales y Familiares */}
         <Col xs={12} className="section-container">
-          <Row>
-            <Col xs={12} md={6}>
-              <h2 className="retro-title text-center">Personal <br></br> References</h2>
-              <div className="references-container">
-                {ref.filter(r => r.type === 'P').map((item, idx) => (
-                  <div key={idx} className="ref-card">
-                    <p className="ref-name"><i className="fas fa-user"></i> {item.name}</p>
-                    <p className="ref-position">{item.position}</p>
-                  </div>
-                ))}
-              </div>
-            </Col>
-            <Col xs={12} md={6}>
-              <h2 className="retro-title text-center">Family <br></br> References</h2>
-              <div className="references-container">
-                {ref.filter(r => r.type === 'F').map((item, idx) => (
-                  <div key={idx} className="ref-card">
-                    <p className="ref-name"><i className="fas fa-user"></i> {item.name}</p>
-                    <p className="ref-position">{item.position}</p>
-                  </div>
-                ))}
-              </div>
-            </Col>
-          </Row>
+        <Col>
+          <h2 className="retro-title text-center">Personal & Familiar References</h2>
+            <div className="references-container">
+              {ref.map((item, idx) => (
+                <div key={idx} className="ref-card">
+                  <p className="ref-name"> <i className="fas fa-user"></i> {item.name} </p>
+                  <p className="ref-position">{item.position}</p>
+                  {item.type === 'F' && (
+                      <p className="ref-position"> <i className="fa-solid fa-people-roof"></i> Familiar Reference</p>
+                  )}
+                  {item.type === 'P' && (
+                    <p className="ref-position"> <i class="fa-solid fa-people-group"></i> Personal Reference</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </Col>
         </Col>
       </Row>
     </Container>
