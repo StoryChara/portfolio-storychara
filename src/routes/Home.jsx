@@ -3,15 +3,21 @@ import { Container, Row, Col } from 'react-bootstrap';
 import './Home.css';
 import profileImage from '../components/img/icon.jpg';
 
+const stats = [
+  {number: "10+", text: "Programming & Technologies"},
+  {number: "5+" , text: "Years Study"},
+  {number: "30+", text: "Courses & Certifications"}
+]
+
 const Home = () => {
   return (
     <Container fluid className="home-container">
       <Row className="hero-section justify-content-center">
-        <Col lg={4} className="profile-section">
+        <Col md={3} lg={4} className="profile-section">
           <div className="profile-card">
             <div className="profile-header">
               <img src={profileImage} alt="Foto de StoryChara desarrollador full stack" className="profile-image" />
-              <p className='retro-title'>StoryChara</p>
+              <p className='retro-title'>Story Chara</p>
               <p className="retro-text">Developer</p>
             </div>
             <div className="social-links">
@@ -32,7 +38,7 @@ const Home = () => {
           </div>
         </Col>
 
-        <Col lg={6} className="intro-section">
+        <Col md ={7} lg={6} className="intro-section">
           <div className="intro-content">
             <p className='retro-text'>Hey, I'm <span className="highlight">María José Jara Herrera</span></p>
             <p className='retro-title'>Developer</p>
@@ -43,20 +49,17 @@ const Home = () => {
             </p>
           </div>
 
-          <Row className="stats-row">
-            <Col xs={12} md={4} className="stat-card">
-              <p className='retro-title'>10+</p>
-              <p className='retro-text'>Programming Languages & Technologies</p>
-            </Col>
-            <Col xs={12} md={4} className="stat-card">
-              <p className='retro-title'>4+</p>
-              <p className='retro-text'>Years Study</p>
-            </Col>
-            <Col xs={12} md={4} className="stat-card">
-              <p className='retro-title'>30+</p>
-              <p className='retro-text'>Courses</p>
-            </Col>
+          <Row className="stats-table justify-content-center">
+              {stats.map((item, idx) => (
+                    <Col key={idx} xs={12} md={3} lg={5} xl={4} className="mb-4">
+                        <div className="stat-card">
+                          <p className='retro-title'> {item.number} </p>
+                          <p className='retro-text'> {item.text} </p>
+                        </div>
+                    </Col>
+              ))}
           </Row>
+
         </Col>
       </Row>
 

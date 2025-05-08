@@ -5,7 +5,6 @@
 .home-container {
      background-color: #0f0f0f;
      color: #ffffff;
-     min-height: 100vh;
      padding: 4rem 2rem;
 }
 
@@ -32,7 +31,6 @@
 
 /* Sección hero */
 .hero-section {
-     margin-bottom: 3rem;
      gap: 2rem;
 }
 
@@ -47,8 +45,7 @@
 
 /* Imagen de perfil con resplandor negro y borde blanco */
 .profile-image {
-     width: 150px;
-     height: 150px;
+     width: 75%;
      margin-bottom: 1.5rem;
      border: 4px solid #ffffff;
      box-shadow: 0 0 24px 8px #000000c0, 0 0 2px 1px #ff0000 inset;
@@ -87,7 +84,7 @@
 
 /* Intro sección */
 .intro-content {
-     padding: 2rem 1rem;
+     padding: 2rem 0rem 1rem 0rem;
 }
 
 /* Resalta nombres o fragmentos */
@@ -96,21 +93,19 @@
      font-family: inherit;
 }
 
-.stats-row {
-     display: flex;
-     gap: 1rem;
-     flex-wrap: wrap;
+.stats-table {
+     margin: 0rem -5rem;
 }
 
 .stat-card {
      background-color: #1b1c24;
      border-radius: 10px;
-     padding: 1.5rem 0rem;
+     padding: 1rem 1.5rem;
      text-align: center;
      transition: box-shadow 0.2s;
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.527);
-     margin-bottom: 1rem; 
-     flex: 1 1 0; 
+     flex: 0 1 1; 
+     height: 100%;
 }
 
 .stat-card:hover {
@@ -168,38 +163,6 @@
      border-color: #ff0000;
      color: #1e1e2f !important;
      box-shadow: 0 0 20px 10px #00000057;
-}
-
-/* Responsive: stats en columna en móvil, en fila en md+ */
-@media (max-width: 991px) { .profile-section, .intro-section, .stats-section {
-          margin-bottom: 2rem;
-     }
-
-     .intro-content {
-          text-align: center;
-          padding: 1rem 2.5rem;
-     }
-
-     .about-section {
-          margin: 1.5rem;
-          padding: 2.5rem 0.5rem;
-     }
-
-     .about-text {
-          text-align: center;
-          margin-bottom: 2rem;
-     }
-
-     .stats-row {
-          gap: 0.5rem;
-          margin-left: 2.5rem;
-          margin-right: 2.5rem;
-     }
-
-     .profile-card {
-          margin-left: 2.5rem;
-          margin-right: 2.5rem;
-     }
 }
 
 /* Accesibilidad: mejores focus states */

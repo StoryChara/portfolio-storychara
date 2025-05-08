@@ -4,7 +4,6 @@
 .project-container {
     background-color: #0f0f0f;
     color: #ffffff;
-    min-height: 100vh;
     padding: 4rem 2rem;
 }
 
@@ -17,10 +16,6 @@
     letter-spacing: 0.1em;
 }
 
-.projects-row {
-    gap: 2rem 1rem;
-}
-
 .project-card {
     background-color: #1b1c24;
     border-radius: 15px;
@@ -29,8 +24,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 260px;
-    max-width: 330px;
     width: 100%;
     transition: transform 0.18s, box-shadow 0.18s;
     border: 2px solid #18191f;
@@ -45,7 +38,6 @@
 }
 .project-image {
     width: 100%;
-    height: 140px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 1.3rem;
@@ -53,9 +45,11 @@
     box-shadow: 0 0 18px 3px #000a;
     background: #292929;
 }
+
 .project-card .retro-title {
     margin-bottom: 0.5em;
     color: #ff0000;
+    font-size: 1.15rem;
     text-shadow: 2px 2px 0 #000;
     text-align: center;
 }
@@ -112,16 +106,6 @@
     border-color: #ff0000;
     box-shadow: 0 0 20px 7px #ff000055;
     outline: none;
-}
-
-@media (max-width: 991px) {
-    .projects-row {
-        gap: 2.3rem 0.2rem;
-    }
-    .project-card {
-        max-width: 95vw;
-        padding: 1.2rem 0.7rem;
-    }
 }
 
 @media (max-width: 576px) {
