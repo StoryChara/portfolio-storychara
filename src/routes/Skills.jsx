@@ -12,7 +12,10 @@ const education = [
           institution: "I.E. Claretiano Gustavo Torres Parra",
           title: "Bachiller Académico",
           period: "2019"
-     },
+     }
+]
+
+const courses = [
      {
           institution: "Udemy",
           title: "Automation Anywhere 360 A2019 - Complete RPA Training Course",
@@ -216,7 +219,7 @@ const education = [
 ];
 
 const skills = [
-     { name: "Python", certified: true, porcentage: "85%", icon: "fa-brands fa-python" },
+     { name: "Python", certified: true, porcentage: "75%", icon: "fa-brands fa-python" },
      { name: "C++", certified: true, porcentage: "40%", icon: "fa-solid fa-terminal" },
      { name: "Java", certified: false, porcentage: "40%", icon: "fa-brands fa-java" },
      { name: "Matlab", certified: false, porcentage: "40%", icon: "fa-solid fa-arrow-down-1-9" },
@@ -228,7 +231,7 @@ const skills = [
      { name: "WordPress", certified: false, porcentage: "25%", icon: "fa-brands fa-wordpress" },
      { name: "React", certified: false, porcentage: "25%", icon: "fa-brands fa-react" },
      { name: "NodeJS", certified: false, porcentage: "25%", icon: "fa-brands fa-node-js" },
-     { name: "PowerApps", certified: false, porcentage: "20%", icon: "fa-brands fa-microsoft" },
+     { name: "Microsoft PowerApps", certified: false, porcentage: "20%", icon: "fa-brands fa-microsoft" },
      { name: "Automation Anywhere", certified: false, porcentage: "20%", icon: "fa-solid fa-robot" },
 ];
 
@@ -245,10 +248,10 @@ const getPercentageNumber = (percentageStr) => {
 
 const getSkillLevel = (percentageStr) => {
      const percentage = getPercentageNumber(percentageStr);
-     if (percentage <= 35) return "Basic";
-     if (percentage <= 75) return "Intermediate";
-     if (percentage <= 85) return "Advanced";
-     if (percentage <= 99) return "Professional";
+     if (percentage < 35) return "Basic";
+     if (percentage < 75) return "Intermediate";
+     if (percentage < 85) return "Advanced";
+     if (percentage < 99) return "Professional";
      return "Native";
 };
      
@@ -256,12 +259,27 @@ const getSkillLevel = (percentageStr) => {
 const Skills = () => {
      return (
           <Container fluid className="skills-container">
-          {/* Sección de Educación */}
+               {/* Sección de Educación */}
                <Row className="justify-content-center">
                     <Col xs={12}>
                          <h2 className="retro-title text-center mb-5">Academic Information</h2>
                     </Col>
                     {education.map((item, idx) => (
+                         <Col key={idx} xs={12} md={6} lg={4} className="mb-4">
+                              <div className="education-card">
+                              <div className="education-period">{item.period}</div>
+                              <h3 className="education-institution">{item.institution}</h3>
+                              <p className="education-title">{item.title}</p>
+                              </div>
+                         </Col>
+                    ))}
+               </Row>
+                {/* Sección de Cursos */}
+                <Row className="justify-content-center">
+                    <Col xs={12}>
+                         <h2 className="retro-title text-center mb-5">Courses & Certifications</h2>
+                    </Col>
+                    {courses.map((item, idx) => (
                          <Col key={idx} xs={12} md={6} lg={4} className="mb-4">
                               <div className="education-card">
                               <div className="education-period">{item.period}</div>
@@ -280,7 +298,7 @@ const Skills = () => {
                          <Col key={idx} xs={6} md={4} lg={3} className="mb-4">
                               <div className="skill-card">
                                    <h3 className="skill-name">
-                                        <i className={skill.icon} style={{ marginRight: "8px", fontSize: "1.5rem" }}></i>
+                                        <i className={skill.icon} style={{ marginRight: "8px", fontSize: "1.5rem" }}></i><br></br>
                                         {skill.name}
                                    </h3>
                                    <div className='skill-level'> <div className="level-bar" style={{ width: skill.porcentage}}></div> </div>

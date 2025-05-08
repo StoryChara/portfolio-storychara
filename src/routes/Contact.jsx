@@ -4,12 +4,12 @@ import './Contact.css';
 
 const work = [
   {
-    institution: "Cazuela Restaurante",
-    position: "Cashier",
-    function: "I was in charge of collecting payment for services and lunches offered at the restaurant, customer service.",
-    supervisor: "Augusto Morales",
-    city: "Neiva, Huila",
-    period: '2018-2019'
+    institution: "Ernst & Young SAS",
+    position: "Intern CS",
+    function: "My role involves providing support in the Technology Consulting - AI & Data division.",
+    supervisor: "-",
+    city: "Bogotá D.C",
+    period: 'Actual'
   },
   {
     institution: "Universidad Nacional de Colombia",
@@ -18,6 +18,14 @@ const work = [
     supervisor: "Jhonatan Rico",
     city: "Bogotá D.C",
     period: '2025'
+  },
+  {
+    institution: "Cazuela Restaurante",
+    position: "Cashier",
+    function: "I was in charge of collecting payment for services and lunches offered at the restaurant, customer service.",
+    supervisor: "Augusto Morales",
+    city: "Neiva, Huila",
+    period: '2018-2019'
   }
 ];
 

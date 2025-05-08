@@ -9,6 +9,7 @@ const NavigationBar = () => {
       <Container>
         <Navbar.Brand as={NavLink} to="/" className="brand-section">
           <i className="fa-solid fa-code fa-flip-horizontal" style={{color: '#ff0000'}}></i>
+          <span className="logo-text">StoryChara</span>
         </Navbar.Brand>
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
