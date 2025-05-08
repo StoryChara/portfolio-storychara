@@ -39,7 +39,7 @@
 
 .education-institution {
     font-family: 'Press Start 2P', cursive;
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: #ff0000;
     margin-bottom: 1rem;
     margin-top: 2rem;
@@ -47,7 +47,7 @@
 
 .education-title {
     font-family: 'Jersey 10', cursive;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     color: #ffffff;
     margin-bottom: 0.5rem;
     letter-spacing: 0.1em;
@@ -78,7 +78,7 @@
 
 .skill-name {
     font-family: 'Press Start 2P', cursive;
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: #ff0000;
     margin-bottom: 1rem;
     line-height: 175%;
@@ -100,7 +100,7 @@
 
 .skill-info {
     font-family: 'Jersey 10', cursive;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     color: #ffffff;
     margin-top: 0.5rem;
     letter-spacing: 0.1em;

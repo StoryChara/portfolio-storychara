@@ -119,13 +119,13 @@ const Contact = () => {
           </Row>
         </Col>
 
-        {/* Referencias Personales y Familiares */}
+        {/* Sección de Referencias Personales y Familiares */}
         <Col xs={12} className="section-container">
-        <Col>
-          <h2 className="retro-title text-center">Personal & Familiar References</h2>
-            <div className="references-container">
-              {ref.map((item, idx) => (
-                <div key={idx} className="ref-card">
+          <h2 className="retro-title text-center">Personal & Familiar <br></br> References</h2>
+          <Row>
+            {ref.map((item, idx) => (
+              <Col key={idx} xs={12} md={6} className="mb-4">
+                <div className="ref-card">
                   <p className="ref-name"> <i className="fas fa-user"></i> {item.name} </p>
                   <p className="ref-position">{item.position}</p>
                   {item.type === 'F' && (
@@ -135,10 +135,11 @@ const Contact = () => {
                     <p className="ref-position"> <i class="fa-solid fa-people-group"></i> Personal Reference</p>
                   )}
                 </div>
-              ))}
-            </div>
-          </Col>
+              </Col>
+            ))}
+          </Row>
         </Col>
+
       </Row>
     </Container>
   );

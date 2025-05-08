@@ -233,6 +233,7 @@ const skills = [
      { name: "NodeJS", certified: false, porcentage: "25%", icon: "fa-brands fa-node-js" },
      { name: "Microsoft PowerApps", certified: false, porcentage: "20%", icon: "fa-brands fa-microsoft" },
      { name: "Automation Anywhere", certified: false, porcentage: "20%", icon: "fa-solid fa-robot" },
+     { name: "Unity", certified: false, porcentage: "10%", icon: "fa-brands fa-unity"}
 ];
 
 const languages = [
@@ -240,6 +241,15 @@ const languages = [
      { name: "English", porcentage: "60%" },
      { name: "Japanese", porcentage: "20%" }
 ];
+
+const others = [
+     {name: "Photoshop", porcentage: "65%"},
+     {name: "Design and Prototyping", porcentage: "30%"},
+     {name: "Inclusivity", porcentage: "35%"},
+     {name: "Social Media Management", porcentage: "35%"},
+     {name: "Creating Content for Social Media", porcentage: "50%"},
+     {name: "Gender Equality", porcentage: "40%"}
+]
 
 // Función para convertir el porcentaje de string a número
 const getPercentageNumber = (percentageStr) => {
@@ -259,13 +269,14 @@ const getSkillLevel = (percentageStr) => {
 const Skills = () => {
      return (
           <Container fluid className="skills-container">
+
                {/* Sección de Educación */}
                <Row className="justify-content-center">
                     <Col xs={12}>
                          <h2 className="retro-title text-center mb-5">Academic Information</h2>
                     </Col>
                     {education.map((item, idx) => (
-                         <Col key={idx} xs={12} md={6} lg={4} className="mb-4">
+                         <Col key={idx} xs={12} md={6} lg={3} className="mb-4">
                               <div className="education-card">
                               <div className="education-period">{item.period}</div>
                               <h3 className="education-institution">{item.institution}</h3>
@@ -274,13 +285,14 @@ const Skills = () => {
                          </Col>
                     ))}
                </Row>
+
                 {/* Sección de Cursos */}
                 <Row className="justify-content-center">
                     <Col xs={12}>
                          <h2 className="retro-title text-center mb-5">Courses & Certifications</h2>
                     </Col>
                     {courses.map((item, idx) => (
-                         <Col key={idx} xs={12} md={6} lg={4} className="mb-4">
+                         <Col key={idx} xs={12} md={6} lg={3} className="mb-4">
                               <div className="education-card">
                               <div className="education-period">{item.period}</div>
                               <h3 className="education-institution">{item.institution}</h3>
@@ -289,13 +301,14 @@ const Skills = () => {
                          </Col>
                     ))}
                </Row>
+
                {/* Sección de Habilidades */}
                <Row className="justify-content-center mt-5">
                     <Col xs={12}>
                          <h2 className="retro-title text-center mb-5">Programming & Technologies</h2>
                     </Col>
                     {skills.map((skill, idx) => (
-                         <Col key={idx} xs={6} md={4} lg={3} className="mb-4">
+                         <Col key={idx} xs={12} md={6} lg={3} className="mb-4">
                               <div className="skill-card">
                                    <h3 className="skill-name">
                                         <i className={skill.icon} style={{ marginRight: "8px", fontSize: "1.5rem" }}></i><br></br>
@@ -308,13 +321,14 @@ const Skills = () => {
                          </Col>
                     ))}
                </Row>
+
                {/* Sección de Idiomas */}
                <Row className="justify-content-center mt-5">
                     <Col xs={12}>
                          <h2 className="retro-title text-center mb-5">Languages</h2>
                     </Col>
                     {languages.map((language, idx) => (
-                         <Col key={idx} xs={6} md={4} lg={3} className="mb-4">
+                         <Col key={idx} xs={12} md={6} lg={3} className="mb-4">
                               <div className="skill-card">
                                    <h3 className="skill-name">{language.name}</h3>
                                    <div className='skill-level'> <div className="level-bar" style={{ width: language.porcentage}}></div> </div>
@@ -323,6 +337,23 @@ const Skills = () => {
                          </Col>
                     ))}
                </Row>
+
+               {/* Sección de Idiomas */}
+               <Row className="justify-content-center mt-5">
+                    <Col xs={12}>
+                         <h2 className="retro-title text-center mb-5">Others Knowledge and Skills</h2>
+                    </Col>
+                    {others.map((language, idx) => (
+                         <Col key={idx} xs={12} md={6} lg={3} className="mb-4">
+                              <div className="skill-card">
+                                   <h3 className="skill-name">{language.name}</h3>
+                                   <div className='skill-level'> <div className="level-bar" style={{ width: language.porcentage}}></div> </div>
+                                   <p className="skill-info"> {getSkillLevel(language.porcentage)} Level </p>
+                              </div>
+                         </Col>
+                    ))}
+               </Row>
+
           </Container>
      );
 };
