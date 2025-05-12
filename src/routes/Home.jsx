@@ -27,9 +27,6 @@ const Home = () => {
               <a href="mailto:mjarah@unal.edu.co" target="_blank" rel="noopener noreferrer" aria-label="Email">
                 <i className="fas fa-envelope me-2"></i>
               </a>
-              <a href="https://wa.me/573157978099" target="_blank" rel="noopener noreferrer" aria-label="Whatsapp">
-                <i className="fab fa-whatsapp"></i>
-              </a>
             </div>
             <a className="btn btn-outline-info mt-4" href="/HV.pdf" download role="button">
               <i className="fas fa-download me-2"></i>
