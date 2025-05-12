@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import './Skills.css';
 
 import { education, courses, skills, languages, others, getSkillLevel } from '../util/Skills'
+import DiplomasCarousel from '../util/Certification';
      
 const Skills = () => {
      return (
@@ -27,7 +28,7 @@ const Skills = () => {
                 {/* Sección de Cursos */}
                 <Row className="justify-content-center">
                     <Col xs={12}>
-                         <h2 className="retro-title text-center mb-5">Courses & Certifications</h2>
+                         <h2 className="retro-title text-center mb-5">Courses</h2>
                     </Col>
                     {courses.map((item, idx) => (
                          <Col key={idx} xs={12} md={6} lg={3} className="mb-4">
@@ -38,6 +39,11 @@ const Skills = () => {
                               </div>
                          </Col>
                     ))}
+               </Row>
+
+               <Row className='justify-content-center'>
+                    <h2 className='retro-title text-center'>Certificates</h2>
+                    <DiplomasCarousel />
                </Row>
 
                {/* Sección de Habilidades */}
