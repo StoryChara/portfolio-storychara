@@ -8,7 +8,8 @@ const TOTAL_DIPLOMAS = courses.length;
 const getDiplomaImages = () => {
   return Array.from({ length: TOTAL_DIPLOMAS }, (_, i) => {
     try {
-      return require(`../components/img/cert/__page-${String(i + 1).padStart(4, "0")}.jpg`);
+      const reverseIndex = TOTAL_DIPLOMAS - i;
+      return require(`../components/img/cert/__page-${String(reverseIndex).padStart(4, "0")}.jpg`);
     } catch {
       return null;
     }
