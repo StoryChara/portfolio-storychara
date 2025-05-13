@@ -22,7 +22,7 @@ const projects = [
   },
   {
     image: IMG_nodemailer,
-    title: 'NodeMailer API - PlanifiKlub',
+    title: 'NodeMailer Web Service - PlanifiKlub',
     description: 'API for the email function of the PlanifiKlub platform.',
     technologies: ['JavaScript', 'API'],
     github: 'https://github.com/luisdiazv/pk_EmailService'
@@ -39,13 +39,12 @@ const projects = [
     title: 'Heladeria',
     description: 'Web project using Python Flask, project developed in a course at Universidad de los Andes.',
     technologies: ['Python', 'Flask', 'SQLAlchemy'],
-    github: 'https://github.com/StoryChara/PROYECTO3-mjarah',
-    web: 'https://proyecto3-mjarah-production.up.railway.app/'
+    github: 'https://github.com/StoryChara/PROYECTO3-mjarah'
   },
   {
     image: IMG_punchout,
     title: 'Punch-Out!!!',
-    description: 'Recreation of Nintendo’s Punch-Out game, specifically the level of the battle against Mike Tyson.',
+    description: "Recreation of Nintendo's Punch-Out game, specifically the level of the battle against Mike Tyson.",
     technologies: ['JavaScript', 'HTML', 'Processing'],
     github: 'https://github.com/StoryChara/punch-out',
     web: 'https://storychara.github.io/punch-out/'

@@ -14,6 +14,16 @@ const education = [
 const courses = [
     {
         institution: "Udemy",
+        title: "Microsoft Dynamics 365 (CRM, NAV, AX) Intro Training Course",
+        period: "2025"
+    },
+    {
+        institution: "Skillsoft",
+        title: "Keeping Track of Activities in Dynamic 365 for Sales",
+        period: "2025"
+    },
+    {
+        institution: "Udemy",
         title: "Automation Anywhere 360 A2019 - Complete RPA Training Course",
         period: "2025"
     },
