@@ -39,7 +39,8 @@ const projects = [
     title: 'Heladeria',
     description: 'Web project using Python Flask, project developed in a course at Universidad de los Andes.',
     technologies: ['Python', 'Flask', 'SQLAlchemy'],
-    github: 'https://github.com/StoryChara/PROYECTO3-mjarah'
+    github: 'https://github.com/StoryChara/PROYECTO3-mjarah',
+    web: 'https://proyecto3-mjarah-production.up.railway.app'
   },
   {
     image: IMG_punchout,
