@@ -42,7 +42,7 @@
 
 /* Imagen de perfil con resplandor negro y borde blanco */
 .profile-image {
-     width: 75%;
+     width: 50%;
      margin-bottom: 1.5rem;
      border: 4px solid #ffffff;
      box-shadow: 0 0 24px 8px #000000c0, 0 0 2px 1px #ff0000 inset;

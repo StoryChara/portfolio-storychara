@@ -128,7 +128,8 @@
     background-color: #1b1c24;
     border-radius: 15px;
     margin: 1rem;
-    width: 90%;
+    width: auto;
+    max-width: 80%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.527);
 }
 

@@ -84,7 +84,7 @@ const Skills = () => {
 
                {/* Sección de Otras Habilidades */}
                <Row className="justify-content-center mt-5">
-                    <Col xs={10}>
+                    <Col xs={12}>
                          <h2 className="retro-title text-center mb-5">Others Knowledge and Skills</h2>
                     </Col>
                     <div className="other-section">

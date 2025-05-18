@@ -1,22 +1,24 @@
 import IMG_planifiklub from '../components/img/planifiklub.png';
 import IMG_nodemailer from '../components/img/nodemailer-api-pk.png';
-import IMG_cakedelivery from '../components/img/cake-delivery.png'
-import IMG_punchout from '../components/img/punch-out.png'
-import IMG_angrybirds from '../components/img/angry-birds.png'
-import IMG_fogshader from '../components/img/fog-texture.png'
-import IMG_cartidy from '../components/img/cartidy.png'
-import IMG_duckhunt from '../components/img/duck-hunt.png'
-import IMG_stonehenge from '../components/img/stonehenge.png'
-import IMG_tangram from '../components/img/tangram.png'
-import IMG_heladeria from '../components/img/heladeria.png'
-import IMG_stardew from '../components/img/stardew_time.png'
+import IMG_cakedelivery from '../components/img/cake-delivery.png';
+import IMG_punchout from '../components/img/punch-out.png';
+import IMG_angrybirds from '../components/img/angry-birds.png';
+import IMG_fogshader from '../components/img/fog-texture.png';
+import IMG_cartidy from '../components/img/cartidy.png';
+import IMG_duckhunt from '../components/img/duck-hunt.png';
+import IMG_stonehenge from '../components/img/stonehenge.png';
+import IMG_tangram from '../components/img/tangram.png';
+import IMG_heladeria from '../components/img/heladeria.png';
+import IMG_animals from '../components/img/animals-api.png';
+import IMG_stardew from '../components/img/stardew_time.png';
+import IMG_vtools from '../components/img/vtools-preview.png';
 
 const projects = [
   {
     image: IMG_planifiklub, 
     title: 'PlanifiKlub',
     description: 'Web platform dedicated to country clubs for booking buildings for their events.',
-    technologies: ['React', 'Node.js', 'JSX', 'Supabase'],
+    technologies: ['React', 'Node.js', 'JSX', 'Supabase', 'JavaScript', 'HTML'],
     github: 'https://github.com/luisdiazv/planifiklub',
     web: 'https://planifiklub.vercel.app/'
   },
@@ -26,6 +28,14 @@ const projects = [
     description: 'API for the email function of the PlanifiKlub platform.',
     technologies: ['JavaScript', 'API'],
     github: 'https://github.com/luisdiazv/pk_EmailService'
+  },
+  {
+    image: IMG_vtools,
+    title: 'vTools Preview',
+    description: 'Project to visualize code for event registration in vTools; it also allows easy copying for insertion on the IEEE vTools page.',
+    technologies: ['React', 'Node.js', 'JSX', 'JavaScript', 'HTML'],
+    github: 'https://github.com/StoryChara/vTools-Template',
+    web: 'https://vtools-template.vercel.app'
   },
   {
     image: IMG_cakedelivery,
@@ -39,8 +49,16 @@ const projects = [
     title: 'Heladeria',
     description: 'Web project using Python Flask, project developed in a course at Universidad de los Andes.',
     technologies: ['Python', 'Flask', 'SQLAlchemy'],
-    github: 'https://github.com/StoryChara/PROYECTO3-mjarah',
-    web: 'https://proyecto3-mjarah-production.up.railway.app'
+    github: 'https://github.com/StoryChara/backend_python',
+    web: 'https://backend-python-proyecto3.up.railway.app'
+  },
+  {
+    image: IMG_animals, 
+    title: 'Animals Web Service',
+    description: 'Web project using Python Flask, project developed in a course at Universidad de los Andes.',
+    technologies: ['Python', 'Flask', 'API'],
+    github: 'https://github.com/StoryChara/backend_python',
+    web: 'https://backend-python-api.up.railway.app'
   },
   {
     image: IMG_punchout,

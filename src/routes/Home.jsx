@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <Container fluid className="home-container">
       <Row className="hero-section justify-content-center">
-        <Col sm={12} md={8} lg={4} className="profile-section">
+        <Col xs={12} sm={8} md={6} lg={3} className="profile-section">
           <div className="profile-card">
             <div className="profile-header">
               <img src={profileImage} alt="Foto de StoryChara desarrollador full stack" className="profile-image" />
@@ -41,7 +41,7 @@ const Home = () => {
           </div>
         </Col>
 
-        <Col md={10} lg={6} className="intro-section">
+        <Col md={12} lg={5} className="intro-section">
           <div className="intro-content">
             <p className='retro-text'>Hey, I'm <span className="highlight">María José Jara Herrera</span></p>
             <p className='retro-title'>Developer</p>
@@ -67,8 +67,8 @@ const Home = () => {
       </Row>
 
       {/* About Section */}
-      <Row className="about-section">
-        <Col lg={12} className="justify-content-center mb-5">
+      <Row className="about-section justify-content-center">
+        <Col className="justify-content-center mb-5">
           <p className='retro-title'>About Me</p>
           <p className='retro-text'>
                 Beyond code, I'm a gaming enthusiast, especially of Nintendo's innovative franchises, which has helped me 
