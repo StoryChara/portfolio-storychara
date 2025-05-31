@@ -108,11 +108,6 @@ const courses = [
         period: "2023"
     },
     {
-        institution: "Prueba TOEFL",
-        title: "Certificación De Inglés B2",
-        period: "2021"
-    },
-    {
         institution: "WIE UNAL",
         title: "Curso de Programación en Python",
         period: "2021"
@@ -149,14 +144,10 @@ const courses = [
     },
     {
         institution: "SENA",
-        title: "English Dot Works 7 (Ingles)",
+        title: "English Dot Works 0-7 (Ingles)",
         period: "2020"
     },
-    {
-        institution: "SENA",
-        title: "English Dot Works 6 (Ingles)",
-        period: "2020"
-    },
+
     {
         institution: "SENA",
         title: "Programación C++ Nivel II: Módulos, Estructura de Almacenamiento y POO",
@@ -180,36 +171,6 @@ const courses = [
     {
         institution: "SENA",
         title: "Manejo de Adobe Photoshop",
-        period: "2019"
-    },
-    {
-        institution: "SENA",
-        title: "English Dot Works 5 (Ingles)",
-        period: "2019"
-    },
-    {
-        institution: "SENA",
-        title: "English Dot Works 4 (Ingles)",
-        period: "2019"
-    },
-    {
-        institution: "SENA",
-        title: "English Dot Works 3 (Ingles)",
-        period: "2019"
-    },
-    {
-        institution: "SENA",
-        title: "English Dot Works 2 (Ingles)",
-        period: "2019"
-    },
-    {
-        institution: "SENA",
-        title: "English Dot Works 1 (Ingles)",
-        period: "2019"
-    },
-    {
-        institution: "SENA",
-        title: "English Dot Works 0 (Ingles)",
         period: "2019"
     },
     {
@@ -239,7 +200,7 @@ const skills = [
     { name: "NodeJS", certified: false, porcentage: "25%", icon: "fa-brands fa-node-js" },
     { name: "Microsoft PowerApps", certified: false, porcentage: "20%", icon: "fa-brands fa-microsoft" },
     { name: "Automation Anywhere", certified: false, porcentage: "20%", icon: "fa-solid fa-robot" },
-    { name: "Unity", certified: false, porcentage: "10%", icon: "fa-brands fa-unity"}
+    { name: "Unity", certified: false, porcentage: "10%", icon: "fa-brands fa-unity" }
 ];
 
 const languages = [
@@ -249,12 +210,12 @@ const languages = [
 ];
 
 const others = [
-    {name: "Inclusivity"},
-    {name: "Gender Equality"},
-    {name: "Design and Prototyping"},
-    {name: "Photoshop and Canva"},
-    {name: "Social Media Management"},
-    {name: "Creating Content for Social Media"},
+    { name: "Inclusivity" },
+    { name: "Gender Equality" },
+    { name: "Design and Prototyping" },
+    { name: "Photoshop and Canva" },
+    { name: "Social Media Management" },
+    { name: "Creating Content for Social Media" },
 ]
 
 // Función para convertir el porcentaje de string a número

@@ -20,7 +20,7 @@
     background-color: #1b1c24;
     border-radius: 15px;
     padding: 1rem 1rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.52);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.52);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,11 +31,13 @@
     letter-spacing: 0.1em;
     line-height: 1;
 }
+
 .project-card:hover {
     transform: translateY(-7px) scale(1.025);
-    box-shadow: 0 0 30px 8px #ff000055;
-    border-color: #ff0000;
+    box-shadow: 0 0 30px 8px #d0000055;
+    border-color: #d00000;
 }
+
 .project-image {
     width: 100%;
     object-fit: cover;
@@ -48,11 +50,12 @@
 
 .project-card .retro-title {
     margin-bottom: 0.5em;
-    color: #ff0000;
+    color: #d00000;
     font-size: 1.15rem;
     text-shadow: 2px 2px 0 #000;
     text-align: center;
 }
+
 .project-desc {
     font-size: 1.15rem;
     margin-bottom: 0.7rem;
@@ -76,14 +79,14 @@
     font-size: 1.25em;
     letter-spacing: 0.04em;
     padding: 0.25em 0.5em;
-    border: 1.4px solid #ff0000;
+    border: 1.4px solid #d00000;
     margin-bottom: -0.5em;
     box-shadow: 1px 1px 5px #0007;
     transition: background 0.21s, color 0.18s;
 }
 
 .project-tech:hover {
-    background: #ff0000;
+    background: #d00000;
     color: #0f0f0f;
 }
 
@@ -92,31 +95,33 @@
     width: 100%;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.9em;
-    color: #ff0000 !important;
-    border-color: #ff0000;
+    color: #d00000 !important;
+    border-color: #d00000;
     text-align: center;
     letter-spacing: .07em;
     box-shadow: 0 0 10px 3px #0009;
     transition: all 0.2s;
 }
 
-.project-github:hover, .project-github:focus {
-    background: #ff0000;
+.project-github:hover,
+.project-github:focus {
+    background: #d00000;
     color: #1e1e2f !important;
-    border-color: #ff0000;
-    box-shadow: 0 0 20px 7px #ff000055;
+    border-color: #d00000;
+    box-shadow: 0 0 20px 7px #d0000055;
     outline: none;
 }
 
 @media (max-width: 576px) {
     .project-card {
-        min-width: 95vw;
+        /* min-width: 95vw; */
         border-radius: 12px;
     }
 }
 
 /* accesibilidad */
-a:focus, button:focus {
-    outline: 2px dashed #ff0000;
+a:focus,
+button:focus {
+    outline: 2px dashed #d00000;
     outline-offset: 2px;
 }

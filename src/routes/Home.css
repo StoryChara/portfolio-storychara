@@ -4,16 +4,51 @@
 /* Contenedor principal */
 .home-container {
      background-color: #0f0f0f;
-     color: #ffffff;
+     color: #d00000;
      padding: 4rem 2rem;
 }
+
+.chara-carousel {
+     height: 400px;
+     /* O el alto que desees */
+     overflow: hidden;
+}
+
+.chara-carousel .carousel-item img {
+     height: 100%;
+     object-fit: cover;
+     /* O usa "contain" si prefieres ver todo el contenido */
+}
+
+.chara-carousel .carousel-control-prev-icon,
+.chara-carousel .carousel-control-next-icon {
+     color: #d00000;
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
+}
+
+.chara-carousel .carousel-control-prev,
+.chara-carousel .carousel-control-next {
+     filter: brightness(1.2);
+     color: #d00000;
+}
+
+.chara-carousel .carousel-indicators button {
+     background-color: #d00000;
+}
+
+.chara-carousel .carousel-indicators .active {
+     background-color: #d00000;
+}
+
 
 
 /* Para títulos destacados */
 .retro-title {
      font-family: 'Press Start 2P', cursive;
      font-size: 1.5em;
-     color: #ff0000;
+     color: #d00000;
      margin-bottom: 0.5em;
      text-shadow:
           2px 2px 0 #000;
@@ -46,7 +81,7 @@
      width: 50%;
      margin-bottom: 1.5rem;
      border: 4px solid #ffffff;
-     box-shadow: 0 0 24px 8px #000000c0, 0 0 2px 1px #ff0000 inset;
+     box-shadow: 0 0 24px 8px #000000c0, 0 0 2px 1px #d00000 inset;
      object-fit: cover;
      background: #111;
 }
@@ -66,12 +101,12 @@
 }
 
 .social-links a:hover {
-     color: #ff0000;
+     color: #d00000;
      transform: scale(1.08) translateY(-3px);
 }
 
 .social-links a:focus {
-     outline: 2px dashed #ff0000;
+     outline: 2px dashed #d00000;
      outline-offset: 2px;
 }
 
@@ -90,7 +125,7 @@
 
 /* Resalta nombres o fragmentos */
 .highlight {
-     color: #ff0000;
+     color: #d00000;
      font-family: inherit;
 }
 
@@ -109,7 +144,7 @@
 }
 
 .stat-card:hover {
-     box-shadow: 0 0 22px 3px #ff000055;
+     box-shadow: 0 0 22px 3px #d0000055;
 }
 
 .stat-card .retro-title {
@@ -126,7 +161,7 @@
 }
 
 .about-section .retro-title {
-     color: #ff0000;
+     color: #d00000;
      margin-bottom: 2rem;
 }
 
@@ -135,9 +170,9 @@
 }
 
 .btn-info {
-     background-color: #ff0000;
+     background-color: #d00000;
      font-family: 'Press Start 2P', cursive;
-     border-color: #ff0000;
+     border-color: #d00000;
      color: #1e1e2f;
 }
 
@@ -146,24 +181,24 @@
 }
 
 .btn-info:hover {
-     background-color: #ff0000;
-     border-color: #ff0000;
+     background-color: #d00000;
+     border-color: #d00000;
      transform: translateY(-2px);
 }
 
 .btn-outline-info {
-     border-color: #ff0000;
+     border-color: #d00000;
      font-family: 'Press Start 2P', cursive;
      font-size: 0.9em;
-     color: #ff0000 !important;
+     color: #d00000 !important;
      background: none;
      transition: all 0.2s;
 }
 
 .btn-outline-info:hover,
 .btn-outline-info:focus {
-     background-color: #ff0000;
-     border-color: #ff0000;
+     background-color: #d00000;
+     border-color: #d00000;
      color: #1e1e2f !important;
      box-shadow: 0 0 20px 10px #00000057;
 }
@@ -171,6 +206,23 @@
 /* Accesibilidad: mejores focus states */
 a:focus,
 button:focus {
-     outline: 2px dashed #ff0000;
+     outline: 2px dashed #d00000;
      outline-offset: 2px;
+}
+
+
+.undertale-heart-list {
+     list-style: none;
+     padding-left: 0;
+     text-align: start;
+}
+
+.undertale-heart-list li::before {
+     content: "";
+     display: inline-block;
+     width: 1rem;
+     height: 1rem;
+     margin-right: 0.5rem;
+     background-image: url('../components/img/undertale-heart.png');
+     background-size: cover;
 }
