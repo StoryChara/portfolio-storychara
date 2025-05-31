@@ -8,6 +8,7 @@
      padding: 4rem 2rem;
 }
 
+
 /* Para títulos destacados */
 .retro-title {
      font-family: 'Press Start 2P', cursive;
@@ -15,7 +16,7 @@
      color: #ff0000;
      margin-bottom: 0.5em;
      text-shadow:
-     2px 2px 0 #000;
+          2px 2px 0 #000;
      letter-spacing: 0.06em;
 }
 
@@ -104,16 +105,14 @@
      text-align: center;
      transition: box-shadow 0.2s;
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.527);
-     flex: 1 1 0; 
      height: 100%;
-     line-height: 0rem;
 }
 
 .stat-card:hover {
      box-shadow: 0 0 22px 3px #ff000055;
 }
 
-.stat-card .retro-title{
+.stat-card .retro-title {
      margin-bottom: 1.5rem;
 }
 
@@ -161,7 +160,8 @@
      transition: all 0.2s;
 }
 
-.btn-outline-info:hover, .btn-outline-info:focus {
+.btn-outline-info:hover,
+.btn-outline-info:focus {
      background-color: #ff0000;
      border-color: #ff0000;
      color: #1e1e2f !important;
@@ -169,7 +169,8 @@
 }
 
 /* Accesibilidad: mejores focus states */
-a:focus, button:focus {
+a:focus,
+button:focus {
      outline: 2px dashed #ff0000;
      outline-offset: 2px;
 }

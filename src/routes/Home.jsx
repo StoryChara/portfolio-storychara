@@ -4,9 +4,9 @@ import './Home.css';
 import profileImage from '../components/img/icon.jpg';
 
 const stats = [
-  {number: "10+", text: "Programming & Technologies"},
-  {number: "5+" , text: "Years Study"},
-  {number: "30+", text: "Courses & Certifications"}
+  { number: "10+", text: "Programming & Technologies" },
+  { number: "5+", text: "Years Study" },
+  { number: "30+", text: "Courses & Certifications" }
 ]
 
 const Home = () => {
@@ -46,21 +46,21 @@ const Home = () => {
             <p className='retro-text'>Hey, I'm <span className="highlight">María José Jara Herrera</span></p>
             <p className='retro-title'>Developer</p>
             <p className="retro-text">
-                A passionate Systems and Computing Engineering student with a particular interest in data science and 
-                information management. My fascination with data organization and analysis drives me to seek efficient 
-                and structured solutions in every project I undertake.
+              A passionate Systems and Computing Engineering student with a particular interest in data science and
+              information management. My fascination with data organization and analysis drives me to seek efficient
+              and structured solutions in every project I undertake.
             </p>
           </div>
 
           <Row className="stats-table justify-content-center">
-              {stats.map((item, idx) => (
-                    <Col key={idx} xs={12} md={5} lg={5} xl={4} className="mb-4">
-                        <div className="stat-card">
-                          <p className='retro-title'> {item.number} </p>
-                          <p className='retro-text'> {item.text} </p>
-                        </div>
-                    </Col>
-              ))}
+            {stats.map((item, idx) => (
+              <Col key={idx} xs={12} md={5} lg={6} xl={5} className="mb-4">
+                <div className="stat-card">
+                  <p className='retro-title'> {item.number} </p>
+                  <p className='retro-text'> {item.text} </p>
+                </div>
+              </Col>
+            ))}
           </Row>
 
         </Col>
@@ -71,13 +71,13 @@ const Home = () => {
         <Col className="justify-content-center mb-5">
           <p className='retro-title'>About Me</p>
           <p className='retro-text'>
-                Beyond code, I'm a gaming enthusiast, especially of Nintendo's innovative franchises, which has helped me 
-                develop creative and problem-solving thinking. This passion for video games complements my perspective on 
-                software development, allowing me to bring a unique approach to my projects.
-                <br></br><br></br>
-                My creative process is enhanced while listening to music, creating an ideal environment for programming and 
-                developing technological solutions. This combination of technology, creativity, and methodology defines my 
-                profile as a developer.
+            Beyond code, I'm a gaming enthusiast, especially of Nintendo's innovative franchises, which has helped me
+            develop creative and problem-solving thinking. This passion for video games complements my perspective on
+            software development, allowing me to bring a unique approach to my projects.
+            <br></br><br></br>
+            My creative process is enhanced while listening to music, creating an ideal environment for programming and
+            developing technological solutions. This combination of technology, creativity, and methodology defines my
+            profile as a developer.
           </p>
           <a className="btn btn-outline-info mt-4" href="/projects" role="button">
             View Projects
