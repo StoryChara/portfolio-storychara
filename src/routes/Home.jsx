@@ -66,7 +66,7 @@ const Home = () => {
             </div>
           </Col>
           <Col md={12} lg={8}>
-            <Carousel className='chara-carousel mt-md-4'>
+            <Carousel className='chara-carousel  mt-4 mt-lg-0'>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
