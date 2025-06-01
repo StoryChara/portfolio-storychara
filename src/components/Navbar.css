@@ -107,13 +107,17 @@
 
 /* Ajustes responsivos para redes sociales */
 @media (max-width: 991px) {
-    .social-links {
-        margin: 1rem 0;
-        padding: 1rem 0;
-        justify-content: center;
-        border-left: none;
-        border-top: 2px solid #333;
+    .navbar-collapse {
+        .social-links {
+            margin: 1rem 0;
+            padding: 1rem 0;
+            justify-content: space-around;
+            border-left: none;
+            border-top: 2px solid #333;
+
+        }
     }
+
 }
 
 

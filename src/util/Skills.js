@@ -10,7 +10,34 @@ const education = [
         period: "2019"
     }
 ]
+const relevantCourses = [
+    {
+        institution: "Ernst & Young Global Limited",
+        title: "Power BI - Fundamentals",
+        period: "2025"
+    },
+    {
+        institution: "Universidad de los Andes",
+        title: "Backend con Python",
+        period: "2025"
+    },
+    {
+        institution: "Microsoft Learn",
+        title: "PL-900T00-A: Microsoft Power Platform Fundamentals",
+        period: "2025"
+    },
+    {
+        institution: "Universidad del Rosario",
+        title: "Curso en Codificación y Programación en Python",
+        period: "2023"
+    },
+    {
+        institution: "WIE UNAL",
+        title: "Curso de Programación en Python",
+        period: "2021"
+    },
 
+]
 const courses = [
     {
         institution: "Udemy",
@@ -27,21 +54,13 @@ const courses = [
         title: "Automation Anywhere 360 A2019 - Complete RPA Training Course",
         period: "2025"
     },
-    {
-        institution: "Ernst & Young Global Limited",
-        title: "Power BI - Fundamentals",
-        period: "2025"
-    },
+
     {
         institution: "Ernst & Young Global Limited",
         title: "Sesgos Inconscientes - Discapacidad",
         period: "2025"
     },
-    {
-        institution: "Universidad de los Andes",
-        title: "Backend con Python",
-        period: "2025"
-    },
+
     {
         institution: "Udemy",
         title: "Wordpress for Beginners - Master Wordpress Quickly",
@@ -67,11 +86,7 @@ const courses = [
         title: "English Develpment Series Exploring Futures Thinking in the age of IA",
         period: "2025"
     },
-    {
-        institution: "Microsoft Learn",
-        title: "PL-900T00-A: Microsoft Power Platform Fundamentals",
-        period: "2025"
-    },
+
     {
         institution: "Udemy",
         title: "Redacción de Prompts y Usos Prácticos para IA y Chat GPT",
@@ -84,34 +99,15 @@ const courses = [
     },
     {
         institution: "Coursera",
-        title: "AI Now 2.0 - Use GEN AI as your Thought Partner - Module 2",
+        title: "AI Now 2.0 - Use GEN AI as your Thought Partner - Module 1-2",
         period: "2025"
-    },
-    {
-        institution: "Coursera",
-        title: "AI Now 2.0 - Use GEN AI as your Thought Partner - Module 1",
-        period: "2025"
-    },
-    {
-        institution: "Universidad del Rosario",
-        title: "Curso de Inteligencia Artificial - Principios y Fundamentos",
-        period: "2023"
-    },
-    {
-        institution: "Universidad del Rosario",
-        title: "Curso en Codificación y Programación en Python",
-        period: "2023"
     },
     {
         institution: "SENA",
         title: "Habilidades Para La Vida",
         period: "2023"
     },
-    {
-        institution: "WIE UNAL",
-        title: "Curso de Programación en Python",
-        period: "2021"
-    },
+
     {
         institution: "SENA",
         title: "Arquitectura de Computadores",
@@ -150,12 +146,7 @@ const courses = [
 
     {
         institution: "SENA",
-        title: "Programación C++ Nivel II: Módulos, Estructura de Almacenamiento y POO",
-        period: "2019"
-    },
-    {
-        institution: "SENA",
-        title: "Programación C++ Nivel I: Estructura del Lenguaje de Programación C++",
+        title: "Programación C++ Nivel I-II: Estructura del Lenguaje de Programación C++ / Módulos, Estructura de Almacenamiento y POO",
         period: "2019"
     },
     {
@@ -232,4 +223,4 @@ const getSkillLevel = (percentageStr) => {
     return "Native";
 };
 
-export { education, courses, skills, languages, others, getSkillLevel }
+export { education, courses, relevantCourses, skills, languages, others, getSkillLevel }

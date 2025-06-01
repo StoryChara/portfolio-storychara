@@ -24,7 +24,7 @@ const Home = () => {
 
 
         <Row className="hero-section justify-content-center">
-          <Col xs={12} sm={8} md={6} lg={3} className="profile-section">
+          <Col xs={12} sm={8} md={6} lg={4} className="profile-section">
             <div className="profile-card">
               <div className="profile-header">
                 <img src={profileImage} alt="Foto de StoryChara desarrollador full stack" className="profile-image" />
@@ -59,14 +59,14 @@ const Home = () => {
                 <li className="mb-3">Resilience</li>
               </ul>
 
-              <a className="btn btn-outline-info mt-4" href="/HV.pdf" download role="button">
+              <a className="btn btn-outline-info mt-4 " href="/HV.pdf" download role="button">
                 <i className="fas fa-download me-2"></i>
                 Download CV
               </a>
             </div>
           </Col>
-          <Col md={12} lg={7}>
-            <Carousel className='chara-carousel'>
+          <Col md={12} lg={8}>
+            <Carousel className='chara-carousel mt-md-4'>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
