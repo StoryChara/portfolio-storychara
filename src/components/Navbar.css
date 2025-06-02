@@ -3,7 +3,7 @@
 
 .custom-navbar {
     background-color: #000000;
-    border-bottom: 4px solid #ff0000;
+    border-bottom: 4px solid #d00000;
     padding: 1rem 0;
     font-family: 'Press Start 2P', cursive;
 }
@@ -41,8 +41,8 @@
 }
 
 .nav-link-custom:hover {
-    color: #ff0000 !important;
-    text-shadow: 0 0 8px #ff0000;
+    color: #d00000 !important;
+    text-shadow: 0 0 8px #d00000;
     transform: scale(1.1);
 }
 
@@ -53,7 +53,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #ff0000;
+    background-color: #d00000;
     transition: width 0.3s ease;
 }
 
@@ -67,41 +67,57 @@
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.25); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Estilos para la sección de redes sociales */
-.social-links {
-  display: flex;
-  gap: 1.5rem;
-  margin-left: 2rem;
-  padding-left: 2rem;
-  border-left: 2px solid #333;
-}
+
 
 .social-links a {
-  color: #ffffff;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #ff0000;
-  transform: translateY(-3px);
-  text-shadow: 0 0 8px #ff0000;
+    color: #d00000;
+    transform: translateY(-3px);
+    text-shadow: 0 0 8px #d00000;
+}
+
+.navbar-collapse {
+    .social-links {
+        display: flex;
+        gap: 1.5rem;
+        margin-left: 2rem;
+        padding-left: 2rem;
+        border-left: 2px solid #333;
+    }
 }
 
 /* Ajustes responsivos para redes sociales */
 @media (max-width: 991px) {
-  .social-links {
-      margin: 1rem 0;
-      padding: 1rem 0;
-      justify-content: center;
-      border-left: none;
-      border-top: 2px solid #333;
-  }
+    .navbar-collapse {
+        .social-links {
+            margin: 1rem 0;
+            padding: 1rem 0;
+            justify-content: space-around;
+            border-left: none;
+            border-top: 2px solid #333;
+
+        }
+    }
+
 }
 
 
@@ -111,11 +127,13 @@
         margin: 1rem 0;
         text-align: center;
     }
-    
+
     .navbar-collapse {
         background-color: #000000;
         padding: 1rem;
         border-radius: 8px;
         margin-top: 1rem;
+
+
     }
 }

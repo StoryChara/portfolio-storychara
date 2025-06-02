@@ -9,11 +9,11 @@
     margin-bottom: 2.5%;
 }
 
-    /* Tarjetas de Educación */
+/* Tarjetas de Educación */
 .education-card {
     background-color: #1b1c24;
     border-radius: 10px;
-    padding: 1.5rem ;
+    padding: 1.5rem;
     height: 100%;
     position: relative;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -29,7 +29,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #ff0000;
+    background-color: #d00000;
     color: #1e1e2f;
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
@@ -40,7 +40,7 @@
 .education-institution {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.15rem;
-    color: #ff0000;
+    color: #d00000;
     margin-bottom: 1rem;
     margin-top: 2rem;
 }
@@ -59,7 +59,7 @@
     color: #cccccc;
 }
 
-    /* Tarjetas de Habilidades */
+/* Tarjetas de Habilidades */
 .skill-card {
     background-color: #1b1c24;
     border-radius: 10px;
@@ -79,7 +79,7 @@
 .skill-name {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.15rem;
-    color: #ff0000;
+    color: #d00000;
     margin-bottom: 1rem;
     line-height: 175%;
 }
@@ -99,7 +99,7 @@
 
 .level-bar {
     height: 100%;
-    background: linear-gradient(90deg, #ff0000, #830000);
+    background: linear-gradient(90deg, #d00000, #830000);
     transition: width 1s ease-in-out;
 }
 
@@ -123,7 +123,7 @@
     letter-spacing: 0.05em;
 }
 
-.other-section{
+.other-section {
     padding: 2rem 2rem;
     background-color: #1b1c24;
     border-radius: 15px;
@@ -146,36 +146,38 @@
 .other-section li i {
     margin-right: 2rem;
     font-size: 1.5rem;
-    color: #ff0000;
+    color: #d00000;
 }
 
-    /* Responsive */
+/* Responsive */
 @media (max-width: 768px) {
     .skills-container {
         padding: 4rem 1rem;
     }
-        
+
     .education-institution {
-            font-size: 0.9rem;
+        font-size: 0.9rem;
     }
-        
+
     .skill-name {
-            font-size: 0.9rem;
+        font-size: 0.9rem;
     }
 }
-    /* Animaciones */
+
+/* Animaciones */
 @keyframes slideIn {
     from {
         transform: translateY(20px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-.education-card, .skill-card {
+.education-card,
+.skill-card {
     animation: slideIn 0.5s ease-out forwards;
 }
-    

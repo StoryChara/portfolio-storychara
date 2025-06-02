@@ -10,7 +10,7 @@ const Footer = () => {
                <Container>
                     <Row className="footer-content">
                          <Col md={4} className="footer-section">
-                         <h3 className="footer-title">CONTACT</h3>
+                              <h3 className="footer-title">CONTACT</h3>
                               <div className="social-links">
                                    <a href="https://github.com/StoryChara" target="_blank" rel="noopener noreferrer">
                                         <i className="fab fa-github"></i>
@@ -28,9 +28,9 @@ const Footer = () => {
                          </Col>
 
                          <Col md={4} className="footer-section text-center">
-                         <div className="footer-logo">
-                              <i className="fa-solid fa-code fa-flip-horizontal" style={{color: '#ff0000'}}></i>
-                              <h3 className="mt-2">Story_Chara</h3>
+                              <div className="footer-logo">
+                                   <i className="fa-solid fa-code fa-flip-horizontal" style={{ color: '#d00000' }}></i>
+                                   <h3 className="mt-2">Story_Chara</h3>
                               </div>
                          </Col>
 
@@ -47,12 +47,12 @@ const Footer = () => {
 
                     <Row>
                          <Col className="text-center copyright">
-                         <p>© {new Date().getFullYear()} Story_Chara | <i className="fas fa-heart"></i></p>
+                              <p>© {new Date().getFullYear()} Story_Chara | <i className="fas fa-heart"></i></p>
                          </Col>
                     </Row>
                </Container>
           </footer>
      );
-     }
+}
 
-     export default Footer;
+export default Footer;
