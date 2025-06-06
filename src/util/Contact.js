@@ -5,7 +5,15 @@ const work = [
     function: "My role involves providing support in the Technology Consulting - AI & Data division.",
     supervisor: "-",
     city: "Bogotá D.C",
-    period: 'Actual'
+    period: '2025-Actual'
+  },
+  {
+    institution: "WIE UNAL",
+    position: "Secretary",
+    function: "I am in charge of creating documents, helping with the organization and planning of group events, as well as creating the website for WIE UNAL.",
+    supervisor: "Alejandra Orjuela & Zharick Pinzón",
+    city: "Bogotá D.C",
+    period: '2024-Actual'
   },
   {
     institution: "Universidad Nacional de Colombia",

@@ -40,6 +40,26 @@ const relevantCourses = [
 ]
 const courses = [
     {
+        institution: "Ernst & Young Global Limited",
+        title: "El poder de tu accountability",
+        period: "2025"
+    },
+    {
+        institution: "Ernst & Young Global Limited",
+        title: "Operationalizing Cyber Strategy During Business Transactions",
+        period: "2025"
+    },
+    {
+        institution: "Ernst & Young Global Limited",
+        title: "Empowering Resilience Transforming Cyber Defense in the P&U landscape",
+        period: "2025"
+    },
+    {
+        institution: "Ernst & Young Global Limited",
+        title: "Neuro-inclusion Best Practices",
+        period: "2025"
+    },
+    {
         institution: "Udemy",
         title: "Microsoft Dynamics 365 (CRM, NAV, AX) Intro Training Course",
         period: "2025"
@@ -54,13 +74,11 @@ const courses = [
         title: "Automation Anywhere 360 A2019 - Complete RPA Training Course",
         period: "2025"
     },
-
     {
         institution: "Ernst & Young Global Limited",
         title: "Sesgos Inconscientes - Discapacidad",
         period: "2025"
     },
-
     {
         institution: "Udemy",
         title: "Wordpress for Beginners - Master Wordpress Quickly",
@@ -86,7 +104,6 @@ const courses = [
         title: "English Develpment Series Exploring Futures Thinking in the age of IA",
         period: "2025"
     },
-
     {
         institution: "Udemy",
         title: "Redacción de Prompts y Usos Prácticos para IA y Chat GPT",
@@ -107,7 +124,6 @@ const courses = [
         title: "Habilidades Para La Vida",
         period: "2023"
     },
-
     {
         institution: "SENA",
         title: "Arquitectura de Computadores",
@@ -143,7 +159,6 @@ const courses = [
         title: "English Dot Works 0-7 (Ingles)",
         period: "2020"
     },
-
     {
         institution: "SENA",
         title: "Programación C++ Nivel I-II: Estructura del Lenguaje de Programación C++ / Módulos, Estructura de Almacenamiento y POO",
