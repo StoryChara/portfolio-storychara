@@ -10,12 +10,14 @@
 
 .chara-carousel {
      overflow: hidden;
+     position: relative;
+     padding-bottom: 7.5%;
 }
 
 .chara-carousel .carousel-item img {
      height: 100%;
      object-fit: cover;
-     /* O usa "contain" si prefieres ver todo el contenido */
+     border-radius: 20px;
 }
 
 .chara-carousel .carousel-control-prev-icon,
@@ -40,7 +42,30 @@
      background-color: #d00000;
 }
 
+.chara-carousel .retro-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1b1c24e6;
+    color: #ff0000;
+    padding: 1rem;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 1rem;
+    text-shadow: 2px 2px #000;
+    letter-spacing: 0.1em;
+    border-top: 4px solid #ff0000;
+    transition: all 0.3s ease;
+    border-radius: 0 0 15px 15px;
+}
 
+.chara-carousel .retro-title:hover {
+    background: #1b1c24;
+    color: #ff3333;
+    text-shadow: 2px 2px #000, 0 0 10px #ff0000;
+}
 
 /* Para títulos destacados */
 .retro-title {
@@ -58,12 +83,10 @@
      font-family: 'Jersey 10', cursive;
      color: #ffffff;
      font-size: 1.25rem;
-     margin: 1rem 0 0.7rem 0;
+     margin: 0rem 0 0.5rem 0;
      letter-spacing: 0.1em;
      line-height: 1;
 }
-
-
 
 /* Tarjeta de perfil */
 .profile-card {
@@ -118,7 +141,7 @@
 
 /* Intro sección */
 .intro-content {
-     padding: 2rem 0rem 1rem 0rem;
+     padding: 1rem 0rem 1rem 0rem;
 }
 
 /* Resalta nombres o fragmentos */
@@ -134,7 +157,7 @@
 .stat-card {
      background-color: #1b1c24;
      border-radius: 10px;
-     padding: 2.5rem 1.5rem 1rem;
+     padding: 1rem 1rem;
      text-align: center;
      transition: box-shadow 0.2s;
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.527);

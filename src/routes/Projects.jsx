@@ -33,7 +33,7 @@ const Projects = () => {
       <h2 className="retro-title text-center project-title-main">My Projects</h2>
       <Row className="projects-row justify-content-center">
         {projects.map((proj, idx) => (
-          <Col key={idx} xs={12} md={6} lg={4} xl={3} className="d-flex justify-content-center p-3">
+          <Col key={idx} xs={12} md={6} xl={4} className="d-flex justify-content-center p-3">
             <ProjectCard {...proj} />
           </Col>
         ))}

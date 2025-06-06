@@ -23,19 +23,27 @@ const projects = [
     web: 'https://planifiklub.vercel.app/'
   },
   {
-    image: IMG_nodemailer,
-    title: 'NodeMailer Web Service - PlanifiKlub',
-    description: 'API for the email function of the PlanifiKlub platform.',
-    technologies: ['JavaScript', 'API'],
-    github: 'https://github.com/luisdiazv/pk_EmailService'
-  },
-  {
     image: IMG_vtools,
     title: 'vTools Preview',
     description: 'Project to visualize code for event registration in vTools; it also allows easy copying for insertion on the IEEE vTools page.',
     technologies: ['React', 'Node.js', 'JSX', 'JavaScript', 'HTML'],
     github: 'https://github.com/StoryChara/vTools-Template',
     web: 'https://vtools-template.vercel.app'
+  },
+  {
+    image: IMG_duckhunt,
+    title: 'Duck Hunt',
+    description: "Recreation of Nintendo's Duck Hunt game, transformed into an infinite game without levels",
+    technologies: ['JavaScript', 'HTML', 'Processing'],
+    github: 'https://github.com/StoryChara/Duck-Hunt',
+    web: 'https://storychara.github.io/Duck-Hunt/'
+  },
+  {
+    image: IMG_nodemailer,
+    title: 'NodeMailer Web Service - PlanifiKlub',
+    description: 'API for the email function of the PlanifiKlub platform.',
+    technologies: ['JavaScript', 'API'],
+    github: 'https://github.com/luisdiazv/pk_EmailService'
   },
   {
     image: IMG_cakedelivery,
@@ -49,16 +57,14 @@ const projects = [
     title: 'Heladeria',
     description: 'Web project using Python Flask, project developed in a course at Universidad de los Andes.',
     technologies: ['Python', 'Flask', 'SQLAlchemy'],
-    github: 'https://github.com/StoryChara/backend_python',
-    web: 'https://backend-python-proyecto3.up.railway.app'
+    github: 'https://github.com/StoryChara/backend_python'
   },
   {
     image: IMG_animals, 
     title: 'Animals Web Service',
     description: 'Web project using Python Flask, project developed in a course at Universidad de los Andes.',
     technologies: ['Python', 'Flask', 'API'],
-    github: 'https://github.com/StoryChara/backend_python',
-    web: 'https://backend-python-api.up.railway.app'
+    github: 'https://github.com/StoryChara/backend_python'
   },
   {
     image: IMG_punchout,
@@ -90,14 +96,6 @@ const projects = [
     description: 'Magi card organizer using different types of data structures.',
     technologies: ['Python'],
     github: 'https://github.com/StoryChara/Cartidy'
-  },
-  {
-    image: IMG_duckhunt,
-    title: 'Duck Hunt',
-    description: "Recreation of Nintendo's Duck Hunt game, transformed into an infinite game without levels",
-    technologies: ['JavaScript', 'HTML', 'Processing'],
-    github: 'https://github.com/StoryChara/Duck-Hunt',
-    web: 'https://storychara.github.io/Duck-Hunt/'
   },
   {
     image: IMG_stonehenge,

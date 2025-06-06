@@ -3,9 +3,9 @@ import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import './Home.css';
 import profileImage from '../components/img/icon.jpg';
 
-import IMG_planifiklub from '../components/img/planifiklub.png';
-import IMG_duckhunt from '../components/img/duck-hunt.png';
-import IMG_heladeria from '../components/img/heladeria.png';
+import { projects } from '../util/Projects'
+
+const [...firstProjects] = projects.slice(0, 3);
 
 const stats = [
   { number: "10+", text: "Programming & Technologies" },
@@ -15,16 +15,10 @@ const stats = [
 
 const Home = () => {
   return (
-
     <>
-
       <Container fluid className="home-container">
-
-
-
-
         <Row className="hero-section justify-content-center">
-          <Col xs={12} sm={8} md={6} lg={4} className="profile-section">
+          <Col xs={12} sm={10} md={8} lg={4} className="profile-section">
             <div className="profile-card">
               <div className="profile-header">
                 <img src={profileImage} alt="Foto de StoryChara desarrollador full stack" className="profile-image" />
@@ -67,27 +61,27 @@ const Home = () => {
           </Col>
           <Col md={12} lg={8}>
             <Carousel className='chara-carousel  mt-4 mt-lg-0'>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={IMG_planifiklub}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={IMG_duckhunt}
-                  alt="Second slide"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src={IMG_heladeria}
-                  alt="Third slide"
-                />
-              </Carousel.Item>
+              {firstProjects.map((item, idx) => (
+                  <Carousel.Item>
+                    <a 
+                      href="https://portfolio-storychara.vercel.app/projects"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="d-block w-100"
+                        src={item.image}
+                        alt={item.description}
+                      />
+                    </a>
+                    <a 
+                      href={item.github}
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <p className='retro-title'>{item.title}</p>
+                    </a>
+                  </Carousel.Item>
+                ))}
             </Carousel>
 
             <Col className="intro-section">
@@ -103,7 +97,7 @@ const Home = () => {
 
               <Row className="stats-table justify-content-center">
                 {stats.map((item, idx) => (
-                  <Col key={idx} xs={12} md={5} lg={6} xl={5} className="mb-4">
+                  <Col key={idx} xs={12} md={4} lg={6} xl={4} className="mb-4">
                     <div className="stat-card">
                       <p className='retro-title'> {item.number} </p>
                       <p className='retro-text'> {item.text} </p>
