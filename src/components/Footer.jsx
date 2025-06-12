@@ -46,7 +46,7 @@ const Footer = () => {
                     </Row>
 
                     <Row>
-                         <Col className="text-center copyright">
+                         <Col className="copyright">
                               <p>© {new Date().getFullYear()} Story_Chara | <i className="fas fa-heart"></i></p>
                          </Col>
                     </Row>

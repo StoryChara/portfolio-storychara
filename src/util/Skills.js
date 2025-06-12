@@ -2,7 +2,7 @@ const education = [
     {
         institution: "Universidad Nacional de Colombia",
         title: "Ingeniería de Sistemas y Computación",
-        period: "Actual"
+        period: "Present"
     },
     {
         institution: "I.E. Claretiano Gustavo Torres Parra",

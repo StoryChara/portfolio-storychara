@@ -1,17 +1,18 @@
-import IMG_planifiklub from '../components/img/planifiklub.png';
-import IMG_nodemailer from '../components/img/nodemailer-api-pk.png';
-import IMG_cakedelivery from '../components/img/cake-delivery.png';
-import IMG_punchout from '../components/img/punch-out.png';
-import IMG_angrybirds from '../components/img/angry-birds.png';
-import IMG_fogshader from '../components/img/fog-texture.png';
-import IMG_cartidy from '../components/img/cartidy.png';
-import IMG_duckhunt from '../components/img/duck-hunt.png';
-import IMG_stonehenge from '../components/img/stonehenge.png';
-import IMG_tangram from '../components/img/tangram.png';
-import IMG_heladeria from '../components/img/heladeria.png';
-import IMG_animals from '../components/img/animals-api.png';
-import IMG_stardew from '../components/img/stardew_time.png';
-import IMG_vtools from '../components/img/vtools-preview.png';
+import IMG_planifiklub from '../components/img/proyectos/planifiklub.png';
+import IMG_nodemailer from '../components/img/proyectos/nodemailer-api-pk.png';
+import IMG_cakedelivery from '../components/img/proyectos/cake-delivery.png';
+import IMG_punchout from '../components/img/proyectos/punch-out.png';
+import IMG_angrybirds from '../components/img/proyectos/angry-birds.png';
+import IMG_fogshader from '../components/img/proyectos/fog-texture.png';
+import IMG_cartidy from '../components/img/proyectos/cartidy.png';
+import IMG_duckhunt from '../components/img/proyectos/duck-hunt.png';
+import IMG_stonehenge from '../components/img/proyectos/stonehenge.png';
+import IMG_tangram from '../components/img/proyectos/tangram.png';
+import IMG_heladeria from '../components/img/proyectos/heladeria.png';
+import IMG_animals from '../components/img/proyectos/animals-api.png';
+import IMG_stardew from '../components/img/proyectos/stardew_time.png';
+import IMG_vtools from '../components/img/proyectos/vtools-preview.png';
+import IMG_wiesite from '../components/img/proyectos/wiesite.png';
 
 const projects = [
   {
@@ -23,12 +24,12 @@ const projects = [
     web: 'https://planifiklub.vercel.app/'
   },
   {
-    image: IMG_vtools,
-    title: 'vTools Preview',
-    description: 'Project to visualize code for event registration in vTools; it also allows easy copying for insertion on the IEEE vTools page.',
-    technologies: ['React', 'Node.js', 'JSX', 'JavaScript', 'HTML'],
-    github: 'https://github.com/StoryChara/vTools-Template',
-    web: 'https://vtools-template.vercel.app'
+    image: IMG_wiesite, 
+    title: 'WIEsite!?',
+    description: 'Development of an innovative and functional website that will represent WIE UNAL, a platform designed to inform, inspire and connect the community.',
+    technologies: ['React', 'Node.js', 'JSX', 'Supabase', 'JavaScript', 'HTML', 'CSS'],
+    github: 'https://github.com/WIE-UNAL/website',
+    web: 'https://wie-unal.vercel.app'
   },
   {
     image: IMG_duckhunt,
@@ -37,6 +38,14 @@ const projects = [
     technologies: ['JavaScript', 'HTML', 'Processing'],
     github: 'https://github.com/StoryChara/Duck-Hunt',
     web: 'https://storychara.github.io/Duck-Hunt/'
+  },
+  {
+    image: IMG_vtools,
+    title: 'vTools Preview',
+    description: 'Project to visualize code for event registration in vTools; it also allows easy copying for insertion on the IEEE vTools page.',
+    technologies: ['React', 'Node.js', 'JSX', 'JavaScript', 'HTML'],
+    github: 'https://github.com/StoryChara/vTools-Template',
+    web: 'https://vtools-template.vercel.app'
   },
   {
     image: IMG_nodemailer,

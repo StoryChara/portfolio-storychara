@@ -87,8 +87,14 @@
     border-radius: 0 0 15px 15px;
 }
 
-@media (width <= 720px) {
+@media (width <= 992px) {
     .carousel-container {
-        max-width: 90%;
+        max-width: 75%;
+    }
+}
+
+@media (width <= 768px){
+    .carousel-container {
+        max-width: 80%;
     }
 }

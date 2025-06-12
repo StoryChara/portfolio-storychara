@@ -59,7 +59,7 @@ const Home = () => {
               </a>
             </div>
           </Col>
-          <Col md={12} lg={8}>
+          <Col md={10} lg={8}>
             <Carousel className='chara-carousel  mt-4 mt-lg-0'>
               {firstProjects.map((item, idx) => (
                   <Carousel.Item>
