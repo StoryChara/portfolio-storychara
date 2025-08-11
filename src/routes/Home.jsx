@@ -38,6 +38,9 @@ const Home = () => {
                 <a href="mailto:mjarah@unal.edu.co" target="_blank" rel="noopener noreferrer">
                   <i className="fas fa-envelope me-2"></i>
                 </a>
+                <a href="https://t.me/m_jara_h" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
               </div>
               <p className='retro-title fs-5'>Soft Skills</p>
               <ul className="retro-text undertale-heart-list list-unstyled ps-3">

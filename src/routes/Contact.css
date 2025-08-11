@@ -114,6 +114,10 @@
     font-size: 1.15em;
 }
 
+.work-function {
+    text-align: start;
+}
+
 /* Tarjetas de referencias */
 .references-container {
     display: grid;

@@ -1,193 +1,121 @@
 const education = [
     {
-        institution: "Universidad Nacional de Colombia",
-        title: "Ingeniería de Sistemas y Computación",
-        period: "Present"
+        institution: "National University of Colombia",
+        title: "Bachelor of Systems and Computer Engineering",
+        period: "2020-08 | 2026-06"
     },
     {
-        institution: "I.E. Claretiano Gustavo Torres Parra",
-        title: "Bachiller Académico",
-        period: "2019"
+        institution: "Samsung Innovation Campus",
+        title: "Bootcamp - Course in Python Coding and Programming",
+        period: "2022-11 | 2023-04",
+    },
+    {
+        institution: "SENA",
+        title: "English Dot Works (Level 0 - 7)",
+        period: "2019-06 | 2020-06",
+    },
+    {
+        institution: "Claretiano Gustavo Torres Parra E.I.",
+        title: "High School Graduate",
+        period: "2019-11"
     }
 ]
-const relevantCourses = [
-    {
-        institution: "Ernst & Young Global Limited",
-        title: "Power BI - Fundamentals",
-        period: "2025"
-    },
-    {
-        institution: "Universidad de los Andes",
-        title: "Backend con Python",
-        period: "2025"
-    },
-    {
-        institution: "Microsoft Learn",
-        title: "PL-900T00-A: Microsoft Power Platform Fundamentals",
-        period: "2025"
-    },
-    {
-        institution: "Universidad del Rosario",
-        title: "Curso en Codificación y Programación en Python",
-        period: "2023"
-    },
-    {
-        institution: "WIE UNAL",
-        title: "Curso de Programación en Python",
-        period: "2021"
-    },
 
-]
 const courses = [
     {
-        institution: "Ernst & Young Global Limited",
-        title: "El poder de tu accountability",
-        period: "2025"
+        institution: "Polytechnic University of Colombia",
+        title: "Diploma in PHP Programming",
+        period: "2025-05 | 2025-06",
     },
     {
-        institution: "Ernst & Young Global Limited",
-        title: "Operationalizing Cyber Strategy During Business Transactions",
-        period: "2025"
-    },
-    {
-        institution: "Ernst & Young Global Limited",
-        title: "Empowering Resilience Transforming Cyber Defense in the P&U landscape",
-        period: "2025"
-    },
-    {
-        institution: "Ernst & Young Global Limited",
-        title: "Neuro-inclusion Best Practices",
-        period: "2025"
-    },
-    {
-        institution: "Udemy",
-        title: "Microsoft Dynamics 365 (CRM, NAV, AX) Intro Training Course",
-        period: "2025"
-    },
-    {
-        institution: "Skillsoft",
-        title: "Keeping Track of Activities in Dynamic 365 for Sales",
-        period: "2025"
-    },
-    {
-        institution: "Udemy",
-        title: "Automation Anywhere 360 A2019 - Complete RPA Training Course",
-        period: "2025"
-    },
-    {
-        institution: "Ernst & Young Global Limited",
-        title: "Sesgos Inconscientes - Discapacidad",
-        period: "2025"
+        institution: "Colsubsidio Technological Education",
+        title: "Advanced Excel and Power BI Fundamentals",
+        period: "2025-05 | 2025-06",
     },
     {
         institution: "Udemy",
         title: "Wordpress for Beginners - Master Wordpress Quickly",
-        period: "2025"
+        period: "2025-04",
     },
     {
         institution: "Skillsoft",
         title: "Concurrency",
-        period: "2025"
+        period: "2025-04",
     },
     {
-        institution: "Ernst & Young Global Limited",
-        title: "Introduction to Inclusive Leadership for All",
-        period: "2025"
-    },
-    {
-        institution: "goFLUENT",
-        title: "CEFR B2 / goFLUENT B2.2",
-        period: "2025"
-    },
-    {
-        institution: "Ernst & Young Global Limited",
-        title: "English Develpment Series Exploring Futures Thinking in the age of IA",
-        period: "2025"
-    },
-    {
-        institution: "Udemy",
-        title: "Redacción de Prompts y Usos Prácticos para IA y Chat GPT",
-        period: "2025"
-    },
-    {
-        institution: "Udemy",
-        title: "Agentes de IA - Transformando Negocios y Procesos Complejos",
-        period: "2025"
+        institution: "University of the Andes",
+        title: "Backend with Python",
+        period: "2025-02 | 2025-04",
     },
     {
         institution: "Coursera",
-        title: "AI Now 2.0 - Use GEN AI as your Thought Partner - Module 1-2",
-        period: "2025"
+        title: "AI Now 2.0 - Use GEN AI as your Thought Partner - Module 1 & 2",
+        period: "2025-04",
+    },
+    {
+        institution: "Udemy",
+        title: "AI Agents – Transforming Business and Complex Processes",
+        period: "2025-04",
+    },
+    {
+        institution: "Samsung Innovation Campus",
+        title: "Artificial Intelligence Course – Principles and Fundamentals",
+        period: "2023-05 | 2023-06",
+    },
+    {
+        institution: "National University of Colombia",
+        title: "Innovation Lab – Practical Programming Workshop for All",
+        period: "2021-07",
+    },
+    {
+        institution: "WIE UNAL",
+        title: "Python Programming Course",
+        period: "2021-06 | 2021-07",
     },
     {
         institution: "SENA",
-        title: "Habilidades Para La Vida",
-        period: "2023"
+        title: "Design Fundamentals",
+        period: "2021-06",
     },
     {
         institution: "SENA",
-        title: "Arquitectura de Computadores",
-        period: "2021"
-    },
-    {
-        institution: "Universidad Nacional de Colombia",
-        title: "Laboratorio Innovación - Taller Práctico de Programación Para Todos",
-        period: "2021"
+        title: "Computer Architecture",
+        period: "2021-06",
     },
     {
         institution: "SENA",
-        title: "Diseño de Videojuegos en Tercera Persona con UNITY",
-        period: "2020"
+        title: "Third Person Video Game Design with UNITY",
+        period: "2020-06",
     },
     {
-        institution: "Universidad Nacional de Colombia",
-        title: "Competencias Para La Gestión De La Información",
-        period: "2020"
+        institution: "Carlos Slim Foundation",
+        title: "Introduction to Programming",
+        period: "2020-04",
     },
     {
-        institution: "EAN Universidad",
-        title: "Inducción a la Matemática Universitaria",
-        period: "2020"
-    },
-    {
-        institution: "Fundación Carlos Slim",
-        title: "Introducción a la Programación",
-        period: "2020"
+        institution: "EAN University",
+        title: "Introduction to University Mathematics",
+        period: "2020-04",
     },
     {
         institution: "SENA",
-        title: "English Dot Works 0-7 (Ingles)",
-        period: "2020"
+        title: "Adobe Photoshop Management",
+        period: "2019-11",
     },
     {
         institution: "SENA",
-        title: "Programación C++ Nivel I-II: Estructura del Lenguaje de Programación C++ / Módulos, Estructura de Almacenamiento y POO",
-        period: "2019"
+        title: "C++ Programming Language (Level 0-2)",
+        period: "2019-11 | 2019-12",
     },
     {
         institution: "SENA",
-        title: "Conceptualización del Lenguaje de Programación C++",
-        period: "2019"
+        title: "Design and Prototyping",
+        period: "2018-12",
     },
     {
         institution: "SENA",
-        title: "Estrategias Para El Mejoramiento De La Comprensión Lectora",
-        period: "2019"
-    },
-    {
-        institution: "SENA",
-        title: "Manejo de Adobe Photoshop",
-        period: "2019"
-    },
-    {
-        institution: "SENA",
-        title: "Diseño y Prototipado",
-        period: "2018",
-    },
-    {
-        institution: "SENA",
-        title: "Tecnoacademia: Contextualización en Ciencia, Tecnología e Innovación",
-        period: "2018",
+        title: "Technoacademy: Science, Technology and Innovation Contextualization",
+        period: "2018-11",
     }
 ];
 
@@ -204,8 +132,6 @@ const skills = [
     { name: "WordPress", certified: false, porcentage: "25%", icon: "fa-brands fa-wordpress" },
     { name: "React", certified: false, porcentage: "25%", icon: "fa-brands fa-react" },
     { name: "NodeJS", certified: false, porcentage: "25%", icon: "fa-brands fa-node-js" },
-    { name: "Microsoft PowerApps", certified: false, porcentage: "20%", icon: "fa-brands fa-microsoft" },
-    { name: "Automation Anywhere", certified: false, porcentage: "20%", icon: "fa-solid fa-robot" },
     { name: "Unity", certified: false, porcentage: "10%", icon: "fa-brands fa-unity" }
 ];
 
@@ -238,4 +164,4 @@ const getSkillLevel = (percentageStr) => {
     return "Native";
 };
 
-export { education, courses, relevantCourses, skills, languages, others, getSkillLevel }
+export { education, courses, skills, languages, others, getSkillLevel }

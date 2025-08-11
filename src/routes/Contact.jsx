@@ -35,6 +35,9 @@ const Contact = () => {
                <a href="mailto:mjarah@unal.edu.co" target="_blank" rel="noopener noreferrer">
                     <i className="fas fa-envelope me-2" style={{fontSize: "2.5rem"}}></i>
                </a>
+               <a href="https://t.me/m_jara_h" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-telegram" style={{fontSize: "2.5rem"}}></i>
+               </a>
           </div>
         </Col>
 
@@ -54,9 +57,11 @@ const Contact = () => {
                   <p className="work-city">
                     <i className="fas fa-map-marker-alt"></i> {item.city}
                   </p>
-                  <p className="work-function">
-                    <i class="fa-solid fa-list-check"></i> {item.function}
-                  </p>
+                  {item.function.map((funcItem, funcIdx) => (
+                    <p key={funcIdx} className="work-function">
+                      <i className="fa-solid fa-list-check"></i> {funcItem}
+                    </p>
+                  ))}
                 </div>
               </Col>
             ))}

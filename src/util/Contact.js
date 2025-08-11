@@ -2,42 +2,52 @@ const work = [
   {
     institution: "Ernst & Young SAS",
     position: "Intern CS",
-    function: "My role involves providing support in the Technology Consulting - AI & Data division.",
+    function: ["Automated data processing tasks in Excel using Python scripts (Pandas, Openpyxl) to improve efficiency and reduce manual errors.",
+              "Developed Business Intelligence solutions using Power Query for ETL processes and Power BI (DAX) for creating interactive dashboards.",
+              "Designed and documented process flowcharts to standardize client workflows and improve understanding of procedures."],
     supervisor: "-",
-    city: "Bogotá D.C",
-    period: '2025-Present'
+    city: "Bogotá, Colombia",
+    period: '2025-03 | 2025-09'
   },
   {
     institution: "WIE UNAL",
     position: "Secretary",
-    function: "I am in charge of creating documents, helping with the organization and planning of group events, as well as creating the website for WIE UNAL.",
+    function: ["Managed all aspects of event coordination, from planning and IEEE vTools registration to promotion, to encourage female participation in STEM.",
+              "Designed, developed, and maintained the group's official website, serving as a central platform for communication and digital content.",
+              "Maintained the member database to streamline communication and track engagement."],
     supervisor: "Alejandra Orjuela & Zharick Pinzón",
-    city: "Bogotá D.C",
-    period: '2024-Present'
+    city: "Bogotá, Colombia",
+    period: '2024-04 | Present'
   },
   {
-    institution: "Universidad Nacional de Colombia",
-    position: "Monitor",
-    function: "I was responsible for resolving student inquiries and grading assignments in the intersemester computer programming course.",
+    institution: "National University of Colombia",
+    position: "Student Assistant",
+    function: ["Developed visual content (presentations, diagrams, graphics) for the 'Cloud Computing with Terraform' module.",
+              "Assisted in creating a cohesive visual identity for the Infrastructure training line.",
+              "Edited educational videos produced by instructors to improve clarity and engagement."],
+    supervisor: "Fabio Gonzalez",
+    city: "Bogotá, Colombia",
+    period: '2025-06 | 2025-09'
+  },
+  {
+    institution: "National University of Colombia",
+    position: "Student Assistant",
+    function: ["Led tutoring sessions for undergraduate students in foundational and object-oriented programming courses.",
+              "Clarified complex programming concepts and guided students through practical exercises.",
+              "Assisted instructors with grading programming assignments and providing constructive feedback."],
     supervisor: "Jhonatan Rico",
-    city: "Bogotá D.C",
+    city: "Bogotá, Colombia",
     period: '2025'
   },
   {
-    institution: "Universidad Nacional de Colombia",
-    position: "Monitor",
-    function: "I was responsible for resolving student inquiries and grading assignments in the OOP course.",
+    institution: "National University of Colombia",
+    position: "MoStudent Assistantnitor",
+    function: ["Provided academic support to students in a Python-focused course, helping resolve technical and conceptual questions.",
+              "Graded programming assignments and projects, offering feedback to help students improve their coding skills.",
+              "Assisted in preparing teaching materials and monitoring students' academic progress."],
     supervisor: "Edgar Vargas",
-    city: "Bogotá D.C",
+    city: "Bogotá, Colombia",
     period: '2025'
-  },
-  {
-    institution: "Cazuela Restaurante",
-    position: "Cashier",
-    function: "I was in charge of collecting payment for services and lunches offered at the restaurant, customer service.",
-    supervisor: "Augusto Morales",
-    city: "Neiva, Huila",
-    period: '2018-2019'
   }
 ];
 

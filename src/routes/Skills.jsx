@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Skills.css';
 
-import { education, courses, relevantCourses, skills, languages, others, getSkillLevel } from '../util/Skills'
+import { education, courses, skills, languages, others, getSkillLevel } from '../util/Skills'
 import DiplomasCarousel from '../util/Certification';
 
 const Skills = () => {
@@ -25,20 +25,6 @@ const Skills = () => {
                     ))}
                </Row>
 
-               <Row className="justify-content-center">
-                    <Col xs={12}>
-                         <h2 className="retro-title text-center mb-5">Relevant Courses</h2>
-                    </Col>
-                    {relevantCourses.map((item, idx) => (
-                         <Col key={idx} xs={12} md={6} lg={4} xl={3} className="mb-4">
-                              <div className="education-card">
-                                   <div className="education-period">{item.period}</div>
-                                   <h3 className="education-institution">{item.institution}</h3>
-                                   <p className="education-title">{item.title}</p>
-                              </div>
-                         </Col>
-                    ))}
-               </Row>
                {/* Sección de Cursos */}
                <Row className="justify-content-center">
                     <Col xs={12}>

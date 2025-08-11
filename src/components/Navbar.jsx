@@ -26,11 +26,17 @@ const NavigationBar = () => {
             <a href="https://github.com/StoryChara" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
             </a>
+            <a href="https://discord.com/users/349912950649126913" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-discord"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mjarah/" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
             <a href="mailto:mjarah@unal.edu.co" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-envelope me-2"></i>
             </a>
-            <a href="https://www.linkedin.com/in/mjarah/" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-linkedin"></i>
+            <a href="https://t.me/m_jara_h" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-telegram"></i>
             </a>
           </div>
         </Navbar.Collapse>
