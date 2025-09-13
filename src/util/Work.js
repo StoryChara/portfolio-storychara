@@ -4,8 +4,8 @@ const convertToNiceUrl = (supabaseUrl) => {
   if (!supabaseUrl) return supabaseUrl;
   
   return supabaseUrl.replace(
-    'https://ygxrnommnvcvldtrgdgd.supabase.co/storage/v1/object/public',
-    'https://portfolio-storychara.vercel.app'
+    'https://ygxrnommnvcvldtrgdgd.supabase.co/storage/v1/object/public/',
+    '/'
   );
 };
 
