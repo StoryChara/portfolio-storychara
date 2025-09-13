@@ -2,9 +2,9 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Contact.css';
 
-import { work, ref } from '../util/Contact';
-
 const Contact = () => {
+
+
   return (
     <Container fluid className="contact-container">
       <Row className="justify-content-center">
@@ -39,54 +39,6 @@ const Contact = () => {
                     <i class="fa-brands fa-telegram" style={{fontSize: "2.5rem"}}></i>
                </a>
           </div>
-        </Col>
-
-        {/* Sección de Referencias Profesionales */}
-        <Col xs={12} className="section-container">
-          <h2 className="retro-title text-center">Professional Experience</h2>
-          <Row>
-            {work.map((item, idx) => (
-              <Col key={idx} xs={12} md={6} className="mb-4">
-                <div className="work-card">
-                  <div className="work-period">{item.period}</div>
-                  <h3 className="work-institution">{item.institution}</h3>
-                  <p className="work-position">{item.position}</p>
-                  <p className="work-supervisor">
-                    <i class="fa-solid fa-user-tag"></i> {item.supervisor}
-                  </p>
-                  <p className="work-city">
-                    <i className="fas fa-map-marker-alt"></i> {item.city}
-                  </p>
-                  {item.function.map((funcItem, funcIdx) => (
-                    <p key={funcIdx} className="work-function">
-                      <i className="fa-solid fa-list-check"></i> {funcItem}
-                    </p>
-                  ))}
-                </div>
-              </Col>
-            ))}
-          </Row>
-        </Col>
-
-        {/* Sección de Referencias Personales y Familiares */}
-        <Col xs={12} className="section-container">
-          <h2 className="retro-title text-center">Personal & Familiar <br></br> References</h2>
-          <Row>
-            {ref.map((item, idx) => (
-              <Col key={idx} xs={12} md={6} className="mb-4">
-                <div className="ref-card">
-                  <p className="ref-name"> <i className="fas fa-user"></i> {item.name} </p>
-                  <p className="ref-position">{item.position}</p>
-                  {item.type === 'F' && (
-                      <p className="ref-position"> <i className="fa-solid fa-people-roof"></i> Familiar Reference</p>
-                  )}
-                  {item.type === 'P' && (
-                    <p className="ref-position"> <i class="fa-solid fa-people-group"></i> Personal Reference</p>
-                  )}
-                </div>
-              </Col>
-            ))}
-          </Row>
         </Col>
 
       </Row>

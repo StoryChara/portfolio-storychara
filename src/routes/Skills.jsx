@@ -1,11 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Skills.css';
 
-import { education, courses, skills, languages, others, getSkillLevel } from '../util/Skills'
+import { getEducation, getCourses, getSkills, getLanguages, getOtherSkills, getSkillLevel } from '../util/Skills'
 import DiplomasCarousel from '../util/Certification';
 
 const Skills = () => {
+     const [education, setEducation] = useState([]);
+     const [courses, setCourses] = useState([]);
+     const [skills, setSkills] = useState([]);
+     const [languages, setLanguages] = useState([]);
+     const [others, setOthers] = useState([]);
+
+     useEffect(() => {
+          const loadData = async () => {    
+               try {
+                    const eduData = await getEducation();
+                    setEducation(eduData);
+                    const courseData = await getCourses();
+                    setCourses(courseData);
+                    const skillData = await getSkills();
+                    setSkills(skillData);
+                    const langData = await getLanguages();
+                    setLanguages(langData);
+                    const otherData = await getOtherSkills(6);
+                    setOthers(otherData);
+               } catch (error) {
+                    console.error('Error loading education data:', error);
+               }
+          };
+          loadData();
+     }, []);
+
      return (
           <Container fluid className="skills-container">
 
@@ -58,8 +84,8 @@ const Skills = () => {
                                         <i className={skill.icon}></i><br></br>
                                         {skill.name}
                                    </h3>
-                                   <div className='skill-level'> <div className="level-bar" style={{ width: skill.porcentage }}></div> </div>
-                                   <p className="skill-info"> {getSkillLevel(skill.porcentage)} Level </p>
+                                   <div className='skill-level'> <div className="level-bar" style={{ width: `${skill.percentage}%` }}></div> </div>
+                                   <p className="skill-info"> {getSkillLevel(skill.percentage)} Level </p>
                                    <p className='skill-info'> {skill.certified && <span className="certified-badge">Certificate</span>} </p>
                               </div>
                          </Col>
@@ -75,8 +101,8 @@ const Skills = () => {
                          <Col key={idx} xs={12} md={6} lg={4} xl={3} className="mb-4">
                               <div className="skill-card">
                                    <h3 className="skill-name">{language.name}</h3>
-                                   <div className='skill-level'> <div className="level-bar" style={{ width: language.porcentage }}></div> </div>
-                                   <p className="skill-info"> {getSkillLevel(language.porcentage)} Level </p>
+                                   <div className='skill-level'> <div className="level-bar" style={{ width: `${language.percentage}%` }}></div> </div>
+                                   <p className="skill-info"> {getSkillLevel(language.percentage)} Level </p>
                               </div>
                          </Col>
                     ))}

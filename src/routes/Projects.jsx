@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Projects.css';
 
-import { projects } from '../util/Projects'
+import { getProyectos, getExperiencia } from '../util/Work';
 
-const ProjectCard = ({ image, title, description, technologies, github, web }) => (
+const ProjectCard = ({ image_url, title, description, technologies, github, web }) => (
   <div className="project-card">
-    <img src={image} alt={`Screenshot de ${title}`} className="project-image" />
+    <img src={image_url} alt={`Screenshot de ${title}`} className="project-image" />
     <h3 className="retro-title">{title}</h3>
     <p className="retro-text project-desc">{description}</p>
     <div className="project-techs">
@@ -28,17 +28,75 @@ const ProjectCard = ({ image, title, description, technologies, github, web }) =
 );
 
 const Projects = () => {
+  const [allProjects, setAllProjects] = useState([]);
+    useEffect(() => {
+      const loadAllProjects = async () => {
+        try {
+          const projects = await getProyectos();
+          setAllProjects(projects);
+        } catch (error) {
+          console.error('Error loading projects:', error);
+        }
+      };
+      
+      loadAllProjects();
+    }, []);
+
+    
+    const [work, setWork] = useState([]);
+  
+    useEffect(() => {
+      const loadWorkExperience = async () => {
+        try {
+          const experience = await getExperiencia();
+          setWork(experience);
+        } catch (error) {
+          console.error('Error loading work experience:', error);
+        }
+      };
+      loadWorkExperience();
+    }, []);
+
   return (
     <Container fluid className="project-container">
       <h2 className="retro-title text-center project-title-main">My Projects</h2>
       <Row className="projects-row justify-content-center">
-        {projects.map((proj, idx) => (
+        {allProjects.map((proj, idx) => (
           <Col key={idx} xs={12} md={6} xl={4} className="d-flex justify-content-center p-3">
             <ProjectCard {...proj} />
           </Col>
         ))}
       </Row>
+
+      <hr style={{ opacity: 0, visibility: 'hidden' }}/>
+
+      {/* Sección de Referencias Profesionales */}
+      <h2 className="retro-title text-center">Professional Experience</h2>
+      <Row>
+        {work.map((item, idx) => (
+          <Col key={idx} xs={12} md={6} className="mb-4">
+            <div className="work-card">
+              <div className="work-period">{item.period}</div>
+              <h3 className="work-institution">{item.institution}</h3>
+              <p className="work-position">{item.position}</p>
+              <p className="work-supervisor">
+                <i class="fa-solid fa-user-tag"></i> {item.supervisor}
+              </p>
+              <p className="work-city">
+                <i className="fas fa-map-marker-alt"></i> {item.city}
+              </p>
+              {item.functions.map((funcItem, funcIdx) => (
+                <p key={funcIdx} className="work-function">
+                  <i className="fa-solid fa-list-check"></i> {funcItem}
+                </p>
+              ))}
+            </div>
+          </Col>
+        ))}
+      </Row>
     </Container>
+
+    
   );
 };
 

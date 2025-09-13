@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import './Home.css';
 import profileImage from '../components/img/icon.jpg';
 
-import { projects } from '../util/Projects'
-
-const [...firstProjects] = projects.slice(0, 3);
+import { getProyectosDestacados } from '../util/Work'
+import { getOtherSkills } from '../util/Skills';
 
 const stats = [
   { number: "10+", text: "Programming & Technologies" },
@@ -14,6 +13,22 @@ const stats = [
 ]
 
 const Home = () => {
+  const [projects, setProjects] = useState([]);
+  const [others, setOtherSkills] = useState([]);
+
+    useEffect(() => {
+      const loadAllProjects = async () => {
+        try {
+          setProjects(await getProyectosDestacados());
+          setOtherSkills(await getOtherSkills(6));
+        } catch (error) {
+          console.error('Error loading projects:', error);
+        }
+      };
+      
+      loadAllProjects();
+    }, []);
+
   return (
     <>
       <Container fluid className="home-container">
@@ -44,19 +59,14 @@ const Home = () => {
               </div>
               <p className='retro-title fs-5'>Soft Skills</p>
               <ul className="retro-text undertale-heart-list list-unstyled ps-3">
-                <li className="mb-3">Inclusive Leadership</li>
-                <li className="mb-3">Effective Communication</li>
-                <li className="mb-3">Interdisciplinary Teamwork</li>
-                <li className="mb-3">Adaptability to Change</li>
-                <li className="mb-3">Critical and Analytical Thinking</li>
-                <li className="mb-3">Emotional Intelligence</li>
-                <li className="mb-3">Digital Empathy</li>
-                <li className="mb-3">Time Management</li>
-                <li className="mb-3">Creativity</li>
-                <li className="mb-3">Resilience</li>
+                {others.map((other, idx) => (
+                  <li className="mb-3" key={idx}>
+                    {other.name}.
+                  </li>
+                ))}
               </ul>
 
-              <a className="btn btn-outline-info mt-4 " href="/HV.pdf" download role="button">
+              <a className="btn btn-outline-info mt-4 " href="/CV.pdf" role="button" target="_blank" rel="noopener noreferrer">
                 <i className="fas fa-download me-2"></i>
                 Download CV
               </a>
@@ -64,7 +74,7 @@ const Home = () => {
           </Col>
           <Col md={10} lg={8}>
             <Carousel className='chara-carousel  mt-4 mt-lg-0'>
-              {firstProjects.map((item, idx) => (
+              {projects.map((item, idx) => (
                   <Carousel.Item>
                     <a 
                       href="https://portfolio-storychara.vercel.app/projects"
@@ -72,7 +82,7 @@ const Home = () => {
                     >
                       <img
                         className="d-block w-100"
-                        src={item.image}
+                        src={item.image_url}
                         alt={item.description}
                       />
                     </a>

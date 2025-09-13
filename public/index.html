@@ -2,28 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site created using create-react-app" />
     
-    <title>StoryChara</title>
+    <!-- SEO Meta Tags -->
+    <title>StoryChara | Portfolio</title>
+    <meta name="description" content="Portfolio of Maria Jara, Systems and Computer Engineering student at National University of Colombia. Specialized in Python, JavaScript, React, and AI development." />
+    <meta name="keywords" content="Maria Jara, Systems Engineering, Computer Engineering, Python, JavaScript, React, Portfolio, AI, Machine Learning, Web Development" />
+    <meta name="author" content="Maria Jara" />
+    
+    <!-- Open Graph Meta Tags (para redes sociales) -->
+    <meta property="og:title" content="Maria Jara - Systems & Computer Engineering Portfolio" />
+    <meta property="og:description" content="Portfolio showcasing projects and skills in Python, JavaScript, React, and AI development." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://portfolio-storychara.vercel.app/" />
+    <!-- meta property="og:image" content="https://portfolio-storychara.vercel.app/og-image.png" /-->
 
-    <!-- Favicon estándar -->
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Maria Jara - Systems & Computer Engineering Portfolio" />
+    <meta name="twitter:description" content="Portfolio showcasing projects and skills in Python, JavaScript, React, and AI development." />
+    <!-- meta name="twitter:image" content="https://portfolio-storychara.vercel.app/og-image.png" /-->
+    
+    <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/logo.svg" />
     <link rel="shortcut icon" href="/favicon_io/favicon.ico">
     
-    <!-- Iconos para dispositivos Android -->
+    <!-- Iconos para dispositivos -->
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon_io/android-chrome-192x192.png">
-    
-    <!-- Icono para dispositivos Apple -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
     
-    <!-- Archivo manifest para compatibilidad con apps web progresivas -->
+    <!-- PWA Manifest -->
     <link rel="manifest" href="/favicon_io/site.webmanifest">
+    
+    <!-- Preconnect para mejorar performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Maria Jara",
+      "jobTitle": "Systems and Computer Engineering Student",
+      "url": "https://portfolio-storychara.vercel.app/",
+      "sameAs": [
+        "https://github.com/StoryChara",
+        "https://www.linkedin.com/in/mjarah/"
+      ]
+    }
+    </script>
   </head>
-  <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/logo.svg" />
+  
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
