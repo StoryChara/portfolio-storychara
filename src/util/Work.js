@@ -1,6 +1,6 @@
 import { supabase } from "./SupabaseAPI";
 
-const convertToNiceUrl = (supabaseUrl) => {
+export const convertToNiceUrl = (supabaseUrl) => {
   if (!supabaseUrl) return supabaseUrl;
   
   return supabaseUrl.replace(

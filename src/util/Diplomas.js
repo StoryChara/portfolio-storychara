@@ -5,7 +5,7 @@ export const getCertificaciones = async () => {
         const { data: files, error } = await supabase.storage
             .from("cert")
             .list("", {
-                limit: 100,   // ajusta si tienes >1000 archivos
+                limit: 100,
                 offset: 0,
             });
 
@@ -14,13 +14,10 @@ export const getCertificaciones = async () => {
             throw error;
         }
 
-        const images = files.map((file) => {
-            const { data } = supabase.storage.from("cert").getPublicUrl(file.name);
-            return {
-                name: file.name,
-                url: data.publicUrl,
-            };
-        });
+        const images = files.map((file) => ({
+            name: file.name,
+            url: `/cert/${file.name}`
+        }));
 
         images.sort((a, b) => b.name.localeCompare(a.name));
         
