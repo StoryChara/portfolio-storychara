@@ -3,6 +3,14 @@
     {
       "source": "/CV.pdf",
       "destination": "https://ygxrnommnvcvldtrgdgd.supabase.co/storage/v1/object/public/docs/HV.pdf"
+    },
+    {
+      "source": "/project-images/(.*)",
+      "destination": "https://ygxrnommnvcvldtrgdgd.supabase.co/storage/v1/object/public/project-images/$1"
+    },
+    {
+      "source": "/cert/(.*)",
+      "destination": "https://ygxrnommnvcvldtrgdgd.supabase.co/storage/v1/object/public/cert/$1"
     }
   ]
 }
