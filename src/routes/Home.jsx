@@ -77,7 +77,7 @@ const Home = () => {
               {projects.map((item, idx) => (
                   <Carousel.Item>
                     <a 
-                      href="https://portfolio-storychara.vercel.app/projects"
+                      href="https://portfolio-storychara.vercel.app/work"
                       rel="noopener noreferrer"
                     >
                       <img
