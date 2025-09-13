@@ -1,5 +1,14 @@
 import { supabase } from "./SupabaseAPI";
 
+const convertToNiceUrl = (supabaseUrl) => {
+  if (!supabaseUrl) return supabaseUrl;
+  
+  return supabaseUrl.replace(
+    'https://ygxrnommnvcvldtrgdgd.supabase.co/storage/v1/object/public',
+    'https://portfolio-storychara.vercel.app'
+  );
+};
+
 export const getProyectos = async () => {
     const { data, error } = await supabase
         .rpc('get_proyectos');
@@ -11,7 +20,10 @@ export const getProyectos = async () => {
         throw error;
     }
 
-    return data;
+    return data.map(project => ({
+        ...project,
+        image_url: convertToNiceUrl(project.image_url)
+    }));
 }
 
 export const getProyectosDestacados = async () => {
@@ -25,7 +37,10 @@ export const getProyectosDestacados = async () => {
         throw error;
     }
 
-    return data;
+    return data.map(project => ({
+        ...project,
+        image_url: convertToNiceUrl(project.image_url)
+    }));
 }
 
 export const getExperiencia = async () => {
