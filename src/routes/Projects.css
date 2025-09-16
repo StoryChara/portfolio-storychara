@@ -135,6 +135,7 @@ button:focus {
     border: 1.4px solid #d00000;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.52);
     transition: transform 0.18s, box-shadow 0.18s;
+    letter-spacing: 0.1em;
 }
 
 .work-card:hover {
