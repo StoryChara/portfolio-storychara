@@ -47,7 +47,7 @@ export const getExperiencia = async () => {
     const { data, error } = await supabase
       .from('work_experience')
       .select('*')
-      .order('id', { ascending: false });;
+      .order('id');;
 
     if (error) {
       console.error("[Supabase Error] message:", error.message);
