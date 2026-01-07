@@ -61,7 +61,6 @@ const Home = () => {
                 </a>
               </div>
               <p className='retro-title fs-5'>Soft Skills</p>
-              {console.log(projects)}
               <ul className="retro-text undertale-heart-list list-unstyled ps-3">
                 {others.map((other, idx) => (
                   <li className="mb-3" key={idx}>
