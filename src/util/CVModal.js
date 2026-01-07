@@ -4,7 +4,7 @@ import './CVModal.css';
 
 const CVModal = ({ show, handleClose }) => {
   const [loading, setLoading] = useState(true);
-  const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const handleLoad = () => {
     setLoading(false);
