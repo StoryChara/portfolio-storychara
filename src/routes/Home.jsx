@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import './Home.css';
-import profileImage from '../components/img/icon.jpg';
 
+import CVModal from '../util/CVModal';
 import { getProyectosDestacados } from '../util/Work'
 import { getOtherSkills } from '../util/Skills';
 
@@ -13,8 +13,11 @@ const stats = [
 ]
 
 const Home = () => {
-  const [projects, setProjects] = useState([]);
-  const [others, setOtherSkills] = useState([]);
+  const [projects, setProjects] = useState([{description: "...", image_url: "/project-images/placeholder.png", title: "...", github: "https://github.com/StoryChara"}]);
+  const [others, setOtherSkills] = useState([{name: "..."}, {name: "..."}, {name: "..."}]);
+  const [showCVModal, setShowCVModal] = useState(false);
+  const handleShowCV = () => setShowCVModal(true);
+  const handleCloseCV = () => setShowCVModal(false);
 
     useEffect(() => {
       const loadAllProjects = async () => {
@@ -36,7 +39,7 @@ const Home = () => {
           <Col xs={12} sm={10} md={8} lg={4} className="profile-section">
             <div className="profile-card">
               <div className="profile-header">
-                <img src={profileImage} alt="Foto de StoryChara desarrollador full stack" className="profile-image" />
+                <img src="https://avatars.githubusercontent.com/u/69637072?v=4" alt="Foto de StoryChara" className="profile-image" />
                 <p className='retro-title fs-3'>Story Chara</p>
                 <p className="retro-text">Developer</p>
               </div>
@@ -58,6 +61,7 @@ const Home = () => {
                 </a>
               </div>
               <p className='retro-title fs-5'>Soft Skills</p>
+              {console.log(projects)}
               <ul className="retro-text undertale-heart-list list-unstyled ps-3">
                 {others.map((other, idx) => (
                   <li className="mb-3" key={idx}>
@@ -66,15 +70,17 @@ const Home = () => {
                 ))}
               </ul>
 
-              <a className="btn btn-outline-info mt-4 " href='https://back-portfolio-storychara.vercel.app/generate-cv' role="button" target="_blank" rel="noopener noreferrer">
+              <button className="btn btn-outline-info mt-4 " onClick={handleShowCV}>
                 <i className="fas fa-download me-2"></i>
                 View CV
-              </a>
+              </button>
+
+              <CVModal show={showCVModal} handleClose={handleCloseCV} />
             </div>
           </Col>
           <Col md={10} lg={8}>
             <Carousel className='chara-carousel  mt-4 mt-lg-0'>
-              {projects.map((item, idx) => (
+              {projects.map((item) => (
                   <Carousel.Item>
                     <a 
                       href="/work"

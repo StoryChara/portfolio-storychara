@@ -28,7 +28,10 @@ const ProjectCard = ({ image_url, title, description, technologies, github, web 
 );
 
 const Projects = () => {
-  const [allProjects, setAllProjects] = useState([]);
+  const [allProjects, setAllProjects] = useState(
+    [{ description: "...", image_url: "/project-images/placeholder.png", title: "...", github: "https://github.com/StoryChara", technologies: ["...", "...", "..."] },
+    { description: "...", image_url: "/project-images/placeholder.png", title: "...", github: "https://github.com/StoryChara", technologies: ["...", "...", "..."] },
+    { description: "...", image_url: "/project-images/placeholder.png", title: "...", github: "https://github.com/StoryChara", technologies: ["...", "...", "..."] }]);
     useEffect(() => {
       const loadAllProjects = async () => {
         try {
@@ -43,7 +46,9 @@ const Projects = () => {
     }, []);
 
     
-    const [work, setWork] = useState([]);
+    const [work, setWork] = useState([
+      {period: "...", institution: "...", position: "...", supervisor: "...", city: "...", functions: ["...","...","..."]},
+      {period: "...", institution: "...", position: "...", supervisor: "...", city: "...", functions: ["...","...","..."]}]);
   
     useEffect(() => {
       const loadWorkExperience = async () => {

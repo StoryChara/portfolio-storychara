@@ -6,11 +6,11 @@ import { getEducation, getCourses, getSkills, getLanguages, getOtherSkills, getS
 import DiplomasCarousel from '../util/Certification';
 
 const Skills = () => {
-     const [education, setEducation] = useState([]);
-     const [courses, setCourses] = useState([]);
-     const [skills, setSkills] = useState([]);
-     const [languages, setLanguages] = useState([]);
-     const [others, setOthers] = useState([]);
+     const [education, setEducation] = useState([{period: '...', institution: '...', title: '...'}, {period: '...', institution: '...', title: '...'} ]);
+     const [courses, setCourses] = useState([{period: '...', institution: '...', title: '...'}, {period: '...', institution: '...', title: '...'} ]);
+     const [skills, setSkills] = useState([{icon: 'fa-solid fa-spinner', name: '...', percentage: 50, certified: false}, {icon: 'fa-solid fa-spinner', name: '...', percentage: 0, certified: false}]);
+     const [languages, setLanguages] = useState([{name: '...', percentage: 50}, {name: '...', percentage: 0 }]);
+     const [others, setOthers] = useState([{name: "..."}, {name: "..."}, {name: "..."}]);
 
      useEffect(() => {
           const loadData = async () => {    
