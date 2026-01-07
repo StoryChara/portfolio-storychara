@@ -66,7 +66,7 @@ const Home = () => {
                 ))}
               </ul>
 
-              <a className="btn btn-outline-info mt-4 " href='https://back-portfolio-storychara.vercel.app/generate-cv' role="button" target="_blank" rel="noopener noreferrer">
+              <a className="btn btn-outline-info mt-4 " href='/CV.pdf' role="button" target="_blank" rel="noopener noreferrer">
                 <i className="fas fa-download me-2"></i>
                 View CV
               </a>
