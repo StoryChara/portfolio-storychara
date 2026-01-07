@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/CV.pdf",
-      "destination": "https://ygxrnommnvcvldtrgdgd.supabase.co/storage/v1/object/public/docs/HV.pdf"
+      "destination": "https://back-portfolio-storychara.vercel.app/generate-cv"
     },
     {
       "source": "/project-images/(.*)",
