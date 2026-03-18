@@ -11,16 +11,18 @@ Este repositorio contiene la arquitectura completa de mi portafolio personal, di
 
 ## 🛠️ Stack Tecnológico
 
-### FrontEnd (React)
+### FrontEnd (React + Vite)
+* **Bundler:** **Vite** (Optimizado para desarrollo rápido)
 * **Framework:** React.js
-* **Estilos:** CSS Modules
+* **Estilos:** React-Bootstrap & CSS Personalizado
 * **Gestión de Datos:** Integración con **Supabase API**
+* **Iconografía:** FontAwesome 6
 * **Despliegue:** Vercel
 
 ### BackEnd (Python)
 * **Lenguaje:** Python 3.13
-* **Documentación:** Swagger
-* **Despliegue:** Vercel.
+* **Documentación:** Swagger / OpenAPI
+* **Despliegue:** Vercel
 
 ---
 
@@ -32,44 +34,48 @@ portfolio-storychara/
 │   ├── main.py             # Punto de entrada de la aplicación
 │   ├── requirements.txt    # Dependencias de Python
 │   └── swagger.yaml        # Definición de la API
-└── FrontEnd/               # Interfaz de Usuario (React)
-    ├── public/             # Archivos estáticos y manifiesto
+└── FrontEnd/               # Interfaz de Usuario (React + Vite)
+    ├── public/             # Activos estáticos
     ├── src/
-    │   ├── components/     # Navbar, Footer y elementos visuales
+    │   ├── assets/         # Imágenes y recursos locales
+    │   ├── components/     # Navbar, Footer y elementos visuales (.jsx)
     │   ├── routes/         # Páginas principales (Home, Projects, Skills, Contact)
-    │   └── util/           # Lógica de datos (Supabase, Certificaciones, CV)
-    └── package.json        # Dependencias de Node.js
+    │   ├── util/           # Lógica de datos (Supabase, Certificaciones, CV)
+    │   ├── App.jsx         # Componente principal y Router
+    │   └── main.jsx        # Punto de entrada de Vite
+    ├── .env.example        # Plantilla de variables de entorno
+    └── package.json        # Dependencias y scripts de Vite
 ```
 
 ---
 
 ## 🚀 Configuración Local
 
-### Preparación del BackEnd
-```
+### 1. Preparación del BackEnd
+```bash
 cd BackEnd
 pip install -r requirements.txt
 python main.py
 ```
 
-### Preparación del FrontEnd
+### 2. Preparación del FrontEnd
+Crea un archivo `.env` en la carpeta `FrontEnd` basándote en lo siguiente:
+```env
+VITE_SUPABASE_URL=tu_url_aqui
+VITE_SUPABASE_ANON_KEY=tu_clave_aqui
+VITE_API_URL=http://localhost:port
 ```
+
+Luego, ejecuta los comandos de desarrollo:
+```bash
 cd FrontEnd
 npm install
-npm start
+npm run dev
 ```
-
----
-
-## ✨ Características Detalladas
-
-* **Modularidad:** Uso de componentes funcionales en React para una fácil mantenibilidad.
-* **Integración con Supabase:** Gestión de base de datos para contenido dinámico.
-* **API Documentada:** El backend expone su estructura mediante Swagger, facilitando el testeo de endpoints.
-* **Visualización de CV:** Incluye lógica para modales de visualización de currículum y certificaciones.
 
 ---
 
 ## 👤 Autor
 
 * **GitHub:** [@StoryChara](https://github.com/StoryChara)
+* **LinkedIn:** [María José Jara Herrera](https://www.linkedin.com/in/mjarah/)
