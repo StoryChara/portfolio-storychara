@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/(.*)",
+      "destination": "/"
+    },
+    {
       "source": "/CV.pdf",
       "destination": "https://back-portfolio-storychara.vercel.app/generate-cv"
     },
