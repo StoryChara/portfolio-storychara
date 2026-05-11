@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, use } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Projects.css';
 
-import { getProyectos, getExperiencia } from '../util/Work';
+import { getProyectos, getExperiencia, getDesigns } from '../util/Work';
 
 const ProjectCard = ({ image_url, title, description, technologies, github, web }) => (
     <div className="project-card">
@@ -24,6 +24,19 @@ const ProjectCard = ({ image_url, title, description, technologies, github, web 
                 </a>
             )}
         </div>
+    </div>
+);
+
+const DesignCard = ({ image_url, title, description, post }) => (
+    <div className="project-card">
+        <img src={image_url} alt={`Diseño de ${title}`} className="project-image" />
+        <h3 className="retro-title">{title}</h3>
+        <p className="retro-text design-desc">{description}</p>
+        {post && (
+            <a href={post} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info design-post" aria-label={`Ver publicación relacionada con ${title}`}>
+                <i className="fas fa-newspaper me-2"></i> Ver Publicación
+            </a>
+        )}
     </div>
 );
 
@@ -62,6 +75,25 @@ const Projects = () => {
         loadWorkExperience();
     }, []);
 
+    const [allDesigns, setAllDesigns] = useState(
+        [{ title: "...", description: "...", image_url: "/design/placeholder.png", post: null },
+        { title: "...", description: "...", image_url: "/design/placeholder.png", post: null },
+        { title: "...", description: "...", image_url: "/design/placeholder.png", post: null }]);
+
+    useEffect(() => {
+        const loadDesigns = async () => {
+            try {
+                const designs = await getDesigns();
+                console.log("Designs cargados:", designs);
+                setAllDesigns(designs);
+            } catch (error) {
+                console.error('Error loading designs:', error);
+            }
+        };
+
+        loadDesigns();
+    }, []);
+
     return (
         <Container fluid className="project-container">
             <h2 className="retro-title text-center project-title-main">My Projects</h2>
@@ -69,6 +101,17 @@ const Projects = () => {
                 {allProjects.map((proj, idx) => (
                     <Col key={idx} xs={12} md={6} xl={4} className="d-flex justify-content-center p-3">
                         <ProjectCard {...proj} />
+                    </Col>
+                ))}
+            </Row>
+
+            <hr style={{ opacity: 0, visibility: 'hidden' }} />
+
+            <h2 className="retro-title text-center project-title-main">My Designs</h2>
+            <Row className="projects-row justify-content-center">
+                {allDesigns.map((design, idx) => (
+                    <Col key={idx} xs={12} md={6} xl={4} className="d-flex justify-content-center p-3">
+                        <DesignCard {...design} />
                     </Col>
                 ))}
             </Row>

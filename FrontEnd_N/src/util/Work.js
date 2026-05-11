@@ -58,3 +58,22 @@ export const getExperiencia = async () => {
 
     return data;
 };
+
+export const getDesigns = async () => {
+    const { data, error } = await supabase
+        .from('designs')
+        .select('*')
+        .order('id');
+    
+     if (error) {
+        console.error("[Supabase Error] message:", error.message);
+        console.error("[Supabase Error] details:", error.details);
+        console.error("[Supabase Error] hint:", error.hint);
+        throw error;
+    }
+
+    return data.map(designs => ({
+        ...designs,
+        image_url: convertToNiceUrl(designs.image_url)
+    }));
+};

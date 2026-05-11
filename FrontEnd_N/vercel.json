@@ -5,6 +5,10 @@
       "destination": "https://ygxrnommnvcvldtrgdgd.supabase.co/storage/v1/object/public/project-images/$1"
     },
     {
+      "source": "/design/(.*)",
+      "destination": "https://ygxrnommnvcvldtrgdgd.supabase.co/storage/v1/object/public/design/$1"
+    },
+    {
       "source": "/cert/(.*)",
       "destination": "https://ygxrnommnvcvldtrgdgd.supabase.co/storage/v1/object/public/cert/$1"
     },
