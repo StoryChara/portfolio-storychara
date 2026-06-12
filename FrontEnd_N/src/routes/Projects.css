@@ -150,8 +150,21 @@
     border-color: transparent;
 }
 
+.design-image-frame {
+    width: 100%;
+    min-height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    box-shadow: none;
+}
+
 .design-image {
-    height: 560px;
+    width: auto;
+    max-width: 100%;
+    max-height: 560px;
+    height: auto;
     object-fit: contain;
     background: transparent;
     margin-bottom: 0;
@@ -238,7 +251,11 @@
     }
 
     .design-image {
-        height: 380px;
+        max-height: 380px;
+    }
+
+    .design-image-frame {
+        min-height: 380px;
     }
 
     .design-content {

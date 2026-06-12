@@ -29,7 +29,9 @@ const ProjectCard = ({ image_url, title, description, technologies, github, web 
 
 const DesignCard = ({ image_url, title, description, post }) => (
     <div className="project-card design-card">
-        <img src={image_url} alt={`Diseño de ${title}`} className="project-image design-image" />
+        <div className="design-image-frame">
+            <img src={image_url} alt={`Diseño de ${title}`} className="project-image design-image" />
+        </div>
         <div className="design-content">
             <h3 className="retro-title">{title}</h3>
             <p className="retro-text design-desc">{description}</p>
