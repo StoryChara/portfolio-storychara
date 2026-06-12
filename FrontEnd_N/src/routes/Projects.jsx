@@ -1,5 +1,5 @@
-import React, { useState, useEffect, use } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import './Projects.css';
 
 import { getProyectos, getExperiencia, getDesigns } from '../util/Work';
@@ -28,15 +28,19 @@ const ProjectCard = ({ image_url, title, description, technologies, github, web 
 );
 
 const DesignCard = ({ image_url, title, description, post }) => (
-    <div className="project-card">
-        <img src={image_url} alt={`Diseño de ${title}`} className="project-image" />
-        <h3 className="retro-title">{title}</h3>
-        <p className="retro-text design-desc">{description}</p>
-        {post && (
-            <a href={post} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info design-post" aria-label={`Ver publicación relacionada con ${title}`}>
-                <i className="fas fa-newspaper me-2"></i> Ver Publicación
-            </a>
-        )}
+    <div className="project-card design-card">
+        <img src={image_url} alt={`Diseño de ${title}`} className="project-image design-image" />
+        <div className="design-content">
+            <h3 className="retro-title">{title}</h3>
+            <p className="retro-text design-desc">{description}</p>
+            <div className="design-post-slot">
+                {post && (
+                    <a href={post} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info design-post" aria-label={`Ver publicación relacionada con ${title}`}>
+                        <i className="fas fa-newspaper me-2"></i> Ver Publicación
+                    </a>
+                )}
+            </div>
+        </div>
     </div>
 );
 
@@ -108,13 +112,17 @@ const Projects = () => {
             <hr style={{ opacity: 0, visibility: 'hidden' }} />
 
             <h2 className="retro-title text-center project-title-main">My Designs</h2>
-            <Row className="projects-row justify-content-center">
-                {allDesigns.map((design, idx) => (
-                    <Col key={idx} xs={12} md={6} xl={4} className="d-flex justify-content-center p-3">
-                        <DesignCard {...design} />
-                    </Col>
-                ))}
-            </Row>
+            <div className="designs-carousel-wrap">
+                <Carousel className="designs-carousel" interval={null}>
+                    {allDesigns.map((design, idx) => (
+                        <Carousel.Item key={`${design.title}-${idx}`}>
+                            <div className="designs-carousel-slide">
+                                <DesignCard {...design} />
+                            </div>
+                        </Carousel.Item>
+                    ))}
+                </Carousel>
+            </div>
 
             <hr style={{ opacity: 0, visibility: 'hidden' }} />
 

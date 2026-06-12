@@ -112,10 +112,154 @@
     outline: none;
 }
 
+.designs-carousel-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.designs-carousel {
+    background: #1b1c24;
+    border-radius: 15px;
+    padding: 1.5rem 3.5rem 3.75rem;
+    border: 2px solid #18191f;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+.designs-carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+.design-card {
+    max-width: 720px;
+    width: 100%;
+    min-height: 100%;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    transition: none;
+}
+
+.design-card:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.design-image {
+    height: 560px;
+    object-fit: contain;
+    background: #0f0f0f;
+    margin-bottom: 0;
+}
+
+.design-content {
+    width: 100%;
+    background: #1b1c24;
+    border-radius: 0 0 15px 15px;
+    padding: 1.25rem 1.5rem 0rem;
+}
+
+.design-content .retro-title {
+    min-height: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.design-desc {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    min-height: 5.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.45;
+}
+
+.design-post-slot {
+    min-height: 3.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.design-post {
+    margin-top: 0;
+    width: auto;
+    min-width: 260px;
+    padding-inline: 1.5rem;
+}
+
+.designs-carousel .carousel-control-prev,
+.designs-carousel .carousel-control-next {
+    width: 12%;
+}
+
+.designs-carousel .carousel-control-prev-icon,
+.designs-carousel .carousel-control-next-icon {
+    background-color: #d00000;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    box-shadow: 0 0 10px rgba(208, 0, 0, 0.55);
+}
+
+.designs-carousel .carousel-indicators {
+    margin-bottom: 0.35rem;
+}
+
+.designs-carousel .carousel-indicators button {
+    background-color: #d00000;
+    opacity: 0.45;
+}
+
+.designs-carousel .carousel-indicators .active {
+    opacity: 1;
+}
+
 @media (max-width: 576px) {
     .project-card {
         /* min-width: 95vw; */
         border-radius: 12px;
+    }
+
+    .designs-carousel {
+        padding: 1rem 2.5rem 2.5rem;
+    }
+
+    .design-image {
+        height: 380px;
+    }
+
+    .design-content {
+        padding: 1rem 1rem 0.75rem;
+    }
+
+    .design-content .retro-title {
+        min-height: auto;
+    }
+
+    .design-desc {
+        min-height: 6.6rem;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+    }
+
+    .design-post {
+        min-width: 100%;
+    }
+
+    .designs-carousel .carousel-control-prev,
+    .designs-carousel .carousel-control-next {
+        width: 16%;
     }
 }
 
