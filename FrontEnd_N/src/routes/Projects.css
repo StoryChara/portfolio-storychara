@@ -153,8 +153,10 @@
 .design-image {
     height: 560px;
     object-fit: contain;
-    background: #0f0f0f;
+    background: transparent;
     margin-bottom: 0;
+    border: none;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
 }
 
 .design-content {
