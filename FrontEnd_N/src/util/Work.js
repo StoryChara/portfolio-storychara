@@ -47,7 +47,7 @@ export const getExperiencia = async () => {
     const { data, error } = await supabase
         .from('work_experience')
         .select('*')
-        .order('id');;
+        .order('id');
 
     if (error) {
         console.error("[Supabase Error] message:", error.message);
@@ -63,7 +63,7 @@ export const getDesigns = async () => {
     const { data, error } = await supabase
         .from('designs')
         .select('*')
-        .order('id');
+        .order('id', { ascending: false });
     
      if (error) {
         console.error("[Supabase Error] message:", error.message);

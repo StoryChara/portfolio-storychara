@@ -6,7 +6,7 @@ import { getProyectos, getExperiencia, getDesigns } from '../util/Work';
 
 const ProjectCard = ({ image_url, title, description, technologies, github, web }) => (
     <div className="project-card">
-        <img src={image_url} alt={`Screenshot de ${title}`} className="project-image" />
+        <img src={image_url} alt={`Screenshot of ${title}`} className="project-image" />
         <h3 className="retro-title">{title}</h3>
         <p className="retro-text project-desc">{description}</p>
         <div className="project-techs">
@@ -15,12 +15,12 @@ const ProjectCard = ({ image_url, title, description, technologies, github, web 
             ))}
         </div>
         <div className="project-buttons">
-            <a href={github} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info project-github" aria-label={`Ver código de ${title} en GitHub`}>
+            <a href={github} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info project-github" aria-label={`Code of ${title} on GitHub`}>
                 <i className="fab fa-github me-2"></i> GitHub
             </a>
             {web && (
-                <a href={web} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info project-github" aria-label={`Ir al sitio web del proyecto ${title}`}>
-                    <i className="fas fa-external-link-alt me-2"></i> Ver Web
+                <a href={web} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info project-github" aria-label={`Go to the website of the project ${title}`}>
+                    <i className="fas fa-external-link-alt me-2"></i> Web
                 </a>
             )}
         </div>
@@ -37,8 +37,8 @@ const DesignCard = ({ image_url, title, description, post }) => (
             <p className="retro-text design-desc">{description}</p>
             <div className="design-post-slot">
                 {post && (
-                    <a href={post} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info design-post" aria-label={`Ver publicación relacionada con ${title}`}>
-                        <i className="fas fa-newspaper me-2"></i> Ver Publicación
+                    <a href={post} target="_blank" rel="noopener noreferrer" className="btn btn-outline-info design-post" aria-label={`Related Post with ${title}`}>
+                        <i className="fas fa-newspaper me-2"></i> Post
                     </a>
                 )}
             </div>
