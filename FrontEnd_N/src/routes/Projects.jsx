@@ -90,7 +90,6 @@ const Projects = () => {
         const loadDesigns = async () => {
             try {
                 const designs = await getDesigns();
-                console.log("Designs cargados:", designs);
                 setAllDesigns(designs);
             } catch (error) {
                 console.error('Error loading designs:', error);
